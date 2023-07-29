@@ -1,5 +1,9 @@
+import en from './contestRules.en.txt';
+import es from './contestRules.es.txt';
+import zh from './contestRules.zh.txt';
+
 export default {
-  en: require('./contestRules.en.txt'),
-  es: require('./contestRules.es.txt'),
-  zh: require('./contestRules.zh.txt'),
+  en,
+  es,
+  zh,
 };

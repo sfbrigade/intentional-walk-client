@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {
   ActivityIndicator,
   BackHandler,
@@ -13,7 +13,6 @@ import {
 import {useFocusEffect} from '@react-navigation/native';
 import Autolink from 'react-native-autolink';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-// import loadLocalResource from 'react-native-local-resource';
 import moment from 'moment';
 
 import {
@@ -28,8 +27,8 @@ import {
 import {Colors, GlobalStyles} from '../../styles';
 import {Api, Realm, Strings} from '../../lib';
 
-// import ContestRules from '../../assets/contestRules';
-// import Privacy from '../../assets/privacy';
+import ContestRules from '../../assets/contestRules';
+import Privacy from '../../assets/privacy';
 import validZipCodes from '../../lib/validZipCodes';
 
 export default function SignUpScreen({navigation, route}) {
@@ -52,14 +51,6 @@ export default function SignUpScreen({navigation, route}) {
   const [showContestRules, setShowContestRules] = useState(false);
 
   const screenDims = Dimensions.get('screen');
-  const [privacyText, setPrivacyText] = useState();
-  // loadLocalResource(Privacy[Strings.getLanguage()]).then(text =>
-  //   setPrivacyText(text),
-  // );
-  // const [contestRulesText, setContestRulesText] = useState();
-  // loadLocalResource(ContestRules[Strings.getLanguage()]).then(text =>
-  //   setContestRulesText(text),
-  // );
 
   useFocusEffect(
     useCallback(() => {
@@ -289,7 +280,10 @@ export default function SignUpScreen({navigation, route}) {
             style={{height: Math.round((screenDims.height - 100) * 0.8)}}>
             <Logo style={styles.privacyLogo} />
             <Text style={GlobalStyles.h1}>{Strings.common.privacyPolicy}</Text>
-            <Autolink text={privacyText} style={styles.privacyText} />
+            <Autolink
+              text={Privacy[Strings.getLanguage()]}
+              style={styles.privacyText}
+            />
           </ScrollText>
         </View>
       </Popup>
@@ -301,7 +295,10 @@ export default function SignUpScreen({navigation, route}) {
             style={{height: Math.round((screenDims.height - 100) * 0.8)}}>
             <Logo style={styles.privacyLogo} />
             <Text style={GlobalStyles.h1}>{Strings.common.contestRules}</Text>
-            <Autolink text={contestRulesText} style={styles.privacyText} />
+            <Autolink
+              text={ContestRules[Strings.getLanguage()]}
+              style={styles.privacyText}
+            />
           </ScrollText>
         </View>
       </Popup>

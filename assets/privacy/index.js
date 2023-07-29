@@ -1,5 +1,9 @@
+import en from './privacy.en.txt';
+import es from './privacy.es.txt';
+import zh from './privacy.zh.txt';
+
 export default {
-  en: require('./privacy.en.txt'),
-  es: require('./privacy.es.txt'),
-  zh: require('./privacy.zh.txt'),
+  en,
+  es,
+  zh,
 };
