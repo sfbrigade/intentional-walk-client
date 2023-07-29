@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView, ScrollView, View} from 'react-native';
-import loadLocalResource from 'react-native-local-resource';
+// import loadLocalResource from 'react-native-local-resource';
 import Autolink from 'react-native-autolink';
 import {PageTitle} from '../../components';
 import {GlobalStyles} from '../../styles';
 import {Realm, Strings} from '../../lib';
 import moment from 'moment';
 
-import ContestRules from '../../assets/contestRules';
+// import ContestRules from '../../assets/contestRules';
 
 export default function ContestRulesScreen({navigation}) {
   const [text, setText] = useState();
@@ -38,9 +38,9 @@ export default function ContestRulesScreen({navigation}) {
     toEn = 'September 30, 2021';
   }
 
-  loadLocalResource(ContestRules[Strings.getLanguage()]).then(newText =>
-    setText(newText),
-  );
+  // loadLocalResource(ContestRules[Strings.getLanguage()]).then(newText =>
+  //   setText(newText),
+  // );
   return (
     <SafeAreaView style={GlobalStyles.container}>
       <ScrollView>
