@@ -37,7 +37,7 @@ const App = () => {
       <NavigationContainer
         ref={navigationRef}
         onStateChange={state => onStateChange(state)}>
-        <RootStack.Navigator mode="modal">
+        <RootStack.Navigator screenOptions={{presentation: "modal"}}>
           <RootStack.Screen
             name="MainStack"
             component={MainStack}
