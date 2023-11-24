@@ -118,7 +118,8 @@ export default function HomeScreen({navigation, route}) {
       }
       setTodaysWalk(newTodaysWalk);
     }
-  }, []);
+  },
+  []);
 
   async function getTotalSteps() {
     setTotalSteps(null);
