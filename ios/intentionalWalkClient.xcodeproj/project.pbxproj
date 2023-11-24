@@ -12,6 +12,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		455033CA2B116DF800966531 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 455033B72B116DF800966531 /* MaterialIcons.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-intentionalWalkClient-intentionalWalkClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-intentionalWalkClient-intentionalWalkClientTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = intentionalWalkClient/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-intentionalWalkClient-intentionalWalkClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-intentionalWalkClient-intentionalWalkClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-intentionalWalkClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intentionalWalkClient.debug.xcconfig"; path = "Target Support Files/Pods-intentionalWalkClient/Pods-intentionalWalkClient.debug.xcconfig"; sourceTree = "<group>"; };
+		455033B72B116DF800966531 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-intentionalWalkClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intentionalWalkClient.release.xcconfig"; path = "Target Support Files/Pods-intentionalWalkClient/Pods-intentionalWalkClient.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-intentionalWalkClient-intentionalWalkClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intentionalWalkClient-intentionalWalkClientTests.debug.xcconfig"; path = "Target Support Files/Pods-intentionalWalkClient-intentionalWalkClientTests/Pods-intentionalWalkClient-intentionalWalkClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-intentionalWalkClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-intentionalWalkClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 		13B07FAE1A68108700A75B9A /* intentionalWalkClient */ = {
 			isa = PBXGroup;
 			children = (
+				455033A42B116DF800966531 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -104,6 +107,15 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-intentionalWalkClient-intentionalWalkClientTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		455033A42B116DF800966531 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				455033B72B116DF800966531 /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -244,6 +256,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				455033CA2B116DF800966531 /* MaterialIcons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
