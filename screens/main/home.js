@@ -38,6 +38,7 @@ export default function HomeScreen({navigation, route}) {
 
   const [recordedWalks, setRecordedWalks] = useState(null);
   const [activeWalk, setActiveWalk] = useState(null);
+  const [hasGoals, setHasGoals] = useState(false);
 
   async function saveStepsAndDistances() {
     const newContest = await Realm.getContest();
@@ -180,6 +181,11 @@ export default function HomeScreen({navigation, route}) {
     getRecordedWalks(newDate);
   }
 
+  async function getWeeklyGoals() {
+    const weeklyGoals = await Realm.getWeeklyGoals();
+    setHasGoals(weeklyGoals.length > 0);
+  }
+
   const refresh = useCallback(
     function () {
       const today = moment().startOf('day');
@@ -192,6 +198,7 @@ export default function HomeScreen({navigation, route}) {
       getTotalSteps();
       getRecordedWalks(dateRef.current);
       saveStepsAndDistances();
+      getWeeklyGoals();
     },
     [getStepsAndDistances],
   );
@@ -383,7 +390,11 @@ export default function HomeScreen({navigation, route}) {
                 />
               </View>
               <View
-                style={[styles.row, isToday ? null : styles.hidden]}
+                style={[
+                  styles.row,
+                  isToday ? null : styles.hidden,
+                  isToday ? null : styles.noTotals,
+                ]}
                 pointerEvents={isToday ? 'auto' : 'none'}>
                 <StatBox
                   mainText={
@@ -399,6 +410,30 @@ export default function HomeScreen({navigation, route}) {
                   style={[styles.overallBox, styles.box]}
                   boxColor={Colors.accent.orange}
                 />
+              </View>
+              <View style={styles.row}>
+                <TouchableOpacity
+                  style={styles.box}
+                  onPress={() =>
+                    hasGoals
+                      ? navigation.navigate('GoalProgress')
+                      : navigation.navigate('SetYourStepGoal', {
+                          fromProgress: true,
+                        })
+                  }>
+                  <View style={[styles.walkBox]}>
+                    <Text style={styles.walkText}>{Strings.home.myGoals}</Text>
+                    <Icon
+                      style={styles.walkChevron}
+                      name="chevron-right"
+                      size={30}
+                    />
+                    <Image
+                      style={styles.goalWatermark}
+                      source={require('../../assets/HomePageMyGoals.png')}
+                    />
+                  </View>
+                </TouchableOpacity>
               </View>
               {contest &&
                 (contest.isDuringContest || contest.isWeekAfterEndDate) && (
@@ -503,6 +538,9 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
   },
+  noTotals: {
+    height: 20,
+  },
   hidden: {
     opacity: 0,
   },
@@ -573,6 +611,12 @@ const styles = StyleSheet.create({
   },
   walkWatermarkWhere: {
     top: '-115%',
+  },
+  goalWatermark: {
+    position: 'absolute',
+    right: 35,
+    resizeMode: 'contain',
+    width: '15%',
   },
   subtitle: {
     alignItems: 'center',

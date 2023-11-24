@@ -12,7 +12,9 @@ import {
   RecordedWalksScreen,
   TopWalkersScreen,
   WhereToWalkScreen,
+  GoalProgressScreen,
 } from '../screens/main';
+import {SetYourStepGoal} from '../screens/onboarding';
 import {
   HamburgerButton,
   HamburgerMenu,
@@ -31,14 +33,13 @@ export default function MainStack() {
   const [showPopupLogout, setShowPopupLogout] = useState(false);
   const [showPopupDelete, setShowPopupDelete] = useState(false);
 
-  const logout = () => {
-    Realm.destroyUser().then(() => {
-      if (!isActiveRoute('Home')) {
-        navigationRef.current?.navigate('Home');
-      }
-      setIsMenuOpen(false);
-      navigationRef.current?.navigate('OnboardingStack');
-    });
+  const logout = async () => {
+    if (!isActiveRoute('Home')) {
+      navigationRef.current?.navigate('Home');
+    }
+    setIsMenuOpen(false);
+    await Realm.destroyUser();
+    navigationRef.current?.navigate('OnboardingStack');
   };
 
   async function deleteUser() {
@@ -90,6 +91,8 @@ export default function MainStack() {
           <Stack.Screen name="RecordedWalks" component={RecordedWalksScreen} />
           <Stack.Screen name="TopWalkers" component={TopWalkersScreen} />
           <Stack.Screen name="WhereToWalk" component={WhereToWalkScreen} />
+          <Stack.Screen name="GoalProgress" component={GoalProgressScreen} />
+          <Stack.Screen name="SetYourStepGoal" component={SetYourStepGoal} />
         </Stack.Navigator>
       </SideMenu>
       <Popup
