@@ -1,4 +1,4 @@
-package com.intentionalwalkclient;
+package org.codeforsanfrancisco.intentionalwalk;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
