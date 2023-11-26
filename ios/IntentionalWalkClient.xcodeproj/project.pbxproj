@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		415AA5F28679B895EA80050C /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1277765445862776C603EC0F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */; };
 		455033CA2B116DF800966531 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 455033B72B116DF800966531 /* MaterialIcons.ttf */; };
+		455033CD2B140BD100966531 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455033CC2B140BD100966531 /* CoreMotion.framework */; };
 		4D6F6DE0B5D19EA0B7761E55 /* libPods-IntentionalWalkClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B9B3113CCEC12AE6B89B8B /* libPods-IntentionalWalkClient.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		3B4392A12AC88292D35C810B /* Pods-intentionalWalkClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intentionalWalkClient.debug.xcconfig"; path = "Target Support Files/Pods-intentionalWalkClient/Pods-intentionalWalkClient.debug.xcconfig"; sourceTree = "<group>"; };
 		455033B72B116DF800966531 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		455033CB2B127B8F00966531 /* IntentionalWalkClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = IntentionalWalkClient.entitlements; path = IntentionalWalkClient/IntentionalWalkClient.entitlements; sourceTree = "<group>"; };
+		455033CC2B140BD100966531 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		5709B34CF0A7D63546082F79 /* Pods-intentionalWalkClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intentionalWalkClient.release.xcconfig"; path = "Target Support Files/Pods-intentionalWalkClient/Pods-intentionalWalkClient.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-intentionalWalkClient-intentionalWalkClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intentionalWalkClient-intentionalWalkClientTests.debug.xcconfig"; path = "Target Support Files/Pods-intentionalWalkClient-intentionalWalkClientTests/Pods-intentionalWalkClient-intentionalWalkClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DEDE10DA0B2EB46984BE3B0 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455033CD2B140BD100966531 /* CoreMotion.framework in Frameworks */,
 				4D6F6DE0B5D19EA0B7761E55 /* libPods-IntentionalWalkClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +110,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				455033CC2B140BD100966531 /* CoreMotion.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				18B9B3113CCEC12AE6B89B8B /* libPods-IntentionalWalkClient.a */,
 				1277765445862776C603EC0F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */,

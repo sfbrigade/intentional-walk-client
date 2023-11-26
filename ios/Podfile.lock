@@ -500,6 +500,8 @@ PODS:
     - React-Core
   - RealmJS (11.10.1):
     - React
+  - RNAppleHealthKit (1.7.0):
+    - React
   - RNCMaskedView (0.1.11):
     - React
   - RNCPushNotificationIOS (1.11.0):
@@ -588,6 +590,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - ReactNativeLocalization (from `../node_modules/react-native-localization`)
   - RealmJS (from `../node_modules/realm`)
+  - RNAppleHealthKit (from `../node_modules/react-native-health`)
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - "RNCPushNotificationIOS (from `../node_modules/@react-native-community/push-notification-ios`)"
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
@@ -705,6 +708,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-localization"
   RealmJS:
     :path: "../node_modules/realm"
+  RNAppleHealthKit:
+    :path: "../node_modules/react-native-health"
   RNCMaskedView:
     :path: "../node_modules/@react-native-community/masked-view"
   RNCPushNotificationIOS:
@@ -778,6 +783,7 @@ SPEC CHECKSUMS:
   ReactCommon: 5f704096ccf7733b390f59043b6fa9cc180ee4f6
   ReactNativeLocalization: fb171138cdc80d5d0d4f20243d2fc82c2b3cc48f
   RealmJS: 8deebf00c84f499c654bc585583c54f55b586751
+  RNAppleHealthKit: 60a6beefdd89a75811e9a8873a5e24f351dee681
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
   RNCPushNotificationIOS: 64218f3c776c03d7408284a819b2abfda1834bc8
   RNDeviceInfo: 5795b418ed3451ebcaf39384e6cf51f60cb931c9
