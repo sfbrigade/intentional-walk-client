@@ -4527,6 +4527,13 @@
     "compare-versions" "^3.4.0"
     "invariant" "^2.2.4"
 
+"expo-sensors@~12.3.0":
+  "integrity" "sha512-KYL/WsJNJGTHRzpeCblPleuqaoCCHbIEQHg3NiRVVG1ismlGnisCPI6OBWYVZhfCJ0FjGvK0Z311Ac/KY8JSpA=="
+  "resolved" "https://registry.npmjs.org/expo-sensors/-/expo-sensors-12.3.0.tgz"
+  "version" "12.3.0"
+  dependencies:
+    "invariant" "^2.2.4"
+
 "expo@*", "expo@^49.0.0":
   "integrity" "sha512-JpHL6V0yt8/fzsmkAdPdtsah+lU6Si4ac7MDklLYvzEil7HAFEsN/pf06wQ21ax4C+BL27hI6JJoD34tzXUCJA=="
   "resolved" "https://registry.npmjs.org/expo/-/expo-49.0.21.tgz"

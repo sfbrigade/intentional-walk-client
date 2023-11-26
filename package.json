@@ -18,6 +18,7 @@
     "axios": "^1.4.0",
     "axios-concurrency": "^1.0.4",
     "expo": "^49.0.0",
+    "expo-sensors": "~12.3.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "numeral": "^2.0.6",
