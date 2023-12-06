@@ -285,10 +285,8 @@ export default function HomeScreen({navigation, route}) {
   );
 
   useEffect(() => {
-    AppState.addEventListener('change', onAppStateChange);
-    return () => {
-      AppState.removeEventListener('change', onAppStateChange);
-    };
+    const subscription = AppState.addEventListener('change', onAppStateChange);
+    return () => subscription.remove();
   }, [onAppStateChange]);
 
   const today = moment().startOf('day');
