@@ -31,8 +31,14 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>To track your steps.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>To track your steps.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSMotionUsageDescription</key>
+	<string>To track your steps in realtime.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>MaterialIcons.ttf</string>
@@ -51,11 +57,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSHealthShareUsageDescription</key>
-	<string>To track your steps.</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>To track your steps.</string>
-	<key>NSMotionUsageDescription</key>
-	<string>To track your steps in realtime.</string>
 </dict>
 </plist>
