@@ -1,4 +1,4 @@
-package org.codeforsanfrancisco.intentionalwalk;
+package org.codeforsanfrancisco.intentionalwalk
 
 import android.app.Application
 import com.facebook.react.PackageList
