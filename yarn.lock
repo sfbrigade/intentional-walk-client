@@ -1584,11 +1584,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@ovalmoney/react-native-fitness@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.npmjs.org/@ovalmoney/react-native-fitness/-/react-native-fitness-0.5.3.tgz"
-  integrity sha512-N+0nifsYPmZIxx8u2Gjlbg9DJ6IpfieSBUKoFQhDpbGctfY22q/pDm9VuqM0ReCxJ9appBFfD5PiNP7YXk0ttg==
-
 "@react-native-community/cli-clean@12.3.0":
   version "12.3.0"
   resolved "https://registry.npmjs.org/@react-native-community/cli-clean/-/cli-clean-12.3.0.tgz"

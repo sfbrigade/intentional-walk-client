@@ -948,8 +948,6 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
-  - react-native-fitness (0.5.3):
-    - React-Core
   - react-native-get-random-values (1.10.0):
     - React-Core
   - react-native-safe-area-context (4.8.2):
@@ -1202,7 +1200,6 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - "react-native-cm-pedometer (from `../node_modules/@sfcivictech/react-native-cm-pedometer`)"
-  - "react-native-fitness (from `../node_modules/@ovalmoney/react-native-fitness`)"
   - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
@@ -1311,8 +1308,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   react-native-cm-pedometer:
     :path: "../node_modules/@sfcivictech/react-native-cm-pedometer"
-  react-native-fitness:
-    :path: "../node_modules/@ovalmoney/react-native-fitness"
   react-native-get-random-values:
     :path: "../node_modules/react-native-get-random-values"
   react-native-safe-area-context:
@@ -1421,7 +1416,6 @@ SPEC CHECKSUMS:
   React-logger: 66b168e2b2bee57bd8ce9e69f739d805732a5570
   React-Mapbuffer: 9ee041e1d7be96da6d76a251f92e72b711c651d6
   react-native-cm-pedometer: 6afab2da72fdc892a140efdf7c4df6f87cc0c3d7
-  react-native-fitness: a359b13e7d7a24e5611992f92ece32960943cd83
   react-native-get-random-values: 384787fd76976f5aec9465aff6fa9e9129af1e74
   react-native-safe-area-context: 0ee144a6170530ccc37a0fd9388e28d06f516a89
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
