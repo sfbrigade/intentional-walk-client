@@ -18,10 +18,8 @@ export default function Recorder(props) {
 
   useEffect(() => {
     Pedometer.startUpdates(newData => {
-      if (!isPausedRef.current) {
-        setData(newData);
-        Realm.updateCurrentWalk(newData);
-      }
+      setData(newData);
+      Realm.updateCurrentWalk(newData);
     });
     return () => Pedometer.stopUpdates();
   }, []);
@@ -60,8 +58,10 @@ export default function Recorder(props) {
     setEnd(newEnd);
     //// get one final update
     Pedometer.getPedometerData(newEnd).then(newData => {
-      setData(newData);
-      Realm.updateCurrentWalk(newData);
+      if (newData) {
+        setData(newData);
+        Realm.updateCurrentWalk(newData);
+      }
     });
   };
 
