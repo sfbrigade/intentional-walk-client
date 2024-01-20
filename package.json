@@ -10,12 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@dongminyu/react-native-step-counter": "francisli/react-native-step-counter#38-update-peer-dependencies",
     "@ovalmoney/react-native-fitness": "^0.5.3",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-community/push-notification-ios": "^1.11.0",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/stack": "^6.3.17",
+    "@sfcivictech/react-native-cm-pedometer": "^1.0.0",
     "axios": "^1.4.0",
     "axios-concurrency": "^1.0.4",
     "lodash": "^4.17.21",
