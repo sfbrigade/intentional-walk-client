@@ -19,17 +19,15 @@ import {Realm, Strings} from '../../lib';
 import moment from 'moment';
 
 export default function WelcomeScreen({navigation}) {
-  useFocusEffect(
-    React.useCallback(() => {
-      const onBackPress = () => {
-        BackHandler.exitApp();
-        return true;
-      };
-      BackHandler.addEventListener('hardwareBackPress', onBackPress);
-      return () =>
-        BackHandler.removeEventListener('hardwareBackPress', onBackPress);
-    }),
-  );
+  useFocusEffect(function () {
+    function onBackPress() {
+      BackHandler.exitApp();
+      return true;
+    }
+    BackHandler.addEventListener('hardwareBackPress', onBackPress);
+    return () =>
+      BackHandler.removeEventListener('hardwareBackPress', onBackPress);
+  });
 
   const [language, setLanguage] = useState(null);
   const [isLoading, setLoading] = useState(false);
