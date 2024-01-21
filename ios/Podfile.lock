@@ -1127,11 +1127,15 @@ PODS:
     - React
   - RNAppleHealthKit (1.7.0):
     - React
-  - RNCMaskedView (0.1.11):
-    - React
+  - RNCMaskedView (0.3.1):
+    - React-Core
   - RNCPushNotificationIOS (1.11.0):
     - React-Core
   - RNDeviceInfo (10.12.0):
+    - React-Core
+  - RNGestureHandler (2.14.1):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
     - React-Core
   - RNScreens (3.29.0):
     - glog
@@ -1222,9 +1226,10 @@ DEPENDENCIES:
   - ReactNativeLocalization (from `../node_modules/react-native-localization`)
   - RealmJS (from `../node_modules/realm`)
   - RNAppleHealthKit (from `../node_modules/react-native-health`)
-  - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
+  - "RNCMaskedView (from `../node_modules/@react-native-masked-view/masked-view`)"
   - "RNCPushNotificationIOS (from `../node_modules/@react-native-community/push-notification-ios`)"
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -1356,11 +1361,13 @@ EXTERNAL SOURCES:
   RNAppleHealthKit:
     :path: "../node_modules/react-native-health"
   RNCMaskedView:
-    :path: "../node_modules/@react-native-community/masked-view"
+    :path: "../node_modules/@react-native-masked-view/masked-view"
   RNCPushNotificationIOS:
     :path: "../node_modules/@react-native-community/push-notification-ios"
   RNDeviceInfo:
     :path: "../node_modules/react-native-device-info"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNSVG:
@@ -1435,9 +1442,10 @@ SPEC CHECKSUMS:
   ReactNativeLocalization: fb171138cdc80d5d0d4f20243d2fc82c2b3cc48f
   RealmJS: 5af7e3b3c1b6de6a1f9bd62bfbf4caca749fa708
   RNAppleHealthKit: 60a6beefdd89a75811e9a8873a5e24f351dee681
-  RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
+  RNCMaskedView: 090213d32d8b3bb83a4dcb7d12c18f0152591906
   RNCPushNotificationIOS: 64218f3c776c03d7408284a819b2abfda1834bc8
   RNDeviceInfo: db5c64a060e66e5db3102d041ebe3ef307a85120
+  RNGestureHandler: 25b969a1ffc806b9f9ad2e170d4a3b049c6af85e
   RNScreens: b582cb834dc4133307562e930e8fa914b8c04ef2
   RNSVG: d00c8f91c3cbf6d476451313a18f04d220d4f396
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
