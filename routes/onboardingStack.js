@@ -1,5 +1,4 @@
 import React from 'react';
-import {Platform} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {
@@ -15,7 +14,7 @@ import {
 } from '../screens/onboarding';
 import {GoalProgressScreen} from '../screens/main';
 import {Logo} from '../components';
-import {Colors, GlobalStyles} from '../styles';
+import {Colors} from '../styles';
 import {Strings} from '../lib';
 
 const Stack = createStackNavigator();
@@ -31,17 +30,19 @@ export default function OnboardingStack() {
         ),
         headerBackTitle: Strings.common.back.toUpperCase(),
         headerBackTitleVisible: true,
+        headerLeftContainerStyle: {
+          width: '33%',
+        },
         headerTintColor: Colors.primary.purple,
         // eslint-disable-next-line react/no-unstable-nested-components
         headerTitle: props => <Logo />,
-        headerTitleContainerStyle: Platform.select({
-          android: GlobalStyles.androidNavHeaderCentered,
-        }),
       }}>
       <Stack.Screen
         name="Welcome"
         component={WelcomeScreen}
-        options={{headerLeft: null}}
+        options={{
+          headerLeft: null,
+        }}
       />
       <Stack.Screen name="SignUp" component={SignUpScreen} />
       <Stack.Screen name="Info" component={InfoScreen} />

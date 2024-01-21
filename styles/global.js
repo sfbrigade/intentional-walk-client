@@ -4,10 +4,6 @@ import {StyleSheet} from 'react-native';
 import Colors from './colors';
 
 export default StyleSheet.create({
-  androidNavHeaderCentered: {
-    left: 0,
-    width: '100%',
-  },
   rounded: {
     borderRadius: 10,
   },
