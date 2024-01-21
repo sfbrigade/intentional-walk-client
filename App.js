@@ -30,8 +30,7 @@ const RootStack = createStackNavigator();
 /// initialize first route
 routeNameRef.current = 'Home';
 
-// const App: () => React$Node = () => {
-const App = () => {
+function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer
@@ -52,6 +51,6 @@ const App = () => {
       </NavigationContainer>
     </SafeAreaProvider>
   );
-};
+}
 
 export default App;

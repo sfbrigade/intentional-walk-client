@@ -5,9 +5,9 @@ import {Colors, GlobalStyles} from '../../styles';
 import {Strings} from '../../lib';
 
 export default function InfoScreen({navigation}) {
-  const onNextPress = () => {
+  function onNextPress() {
     navigation.navigate('Permissions');
-  };
+  }
 
   return (
     <SafeAreaView style={GlobalStyles.container}>

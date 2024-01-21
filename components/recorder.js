@@ -29,12 +29,12 @@ export default function Recorder(props) {
     return () => clearInterval(interval);
   }, []);
 
-  const onPause = () => {
+  function onPause() {
     setPause(new Date());
     isPausedRef.current = true;
-  };
+  }
 
-  const onResume = () => {
+  function onResume() {
     Realm.open().then(realm => {
       realm.write(() => {
         activeWalk.pause =
@@ -44,9 +44,9 @@ export default function Recorder(props) {
         setEnd(null);
       });
     });
-  };
+  }
 
-  const onStop = () => {
+  function onStop() {
     let newEnd;
     if (pause) {
       newEnd = pause;
@@ -63,14 +63,14 @@ export default function Recorder(props) {
         Realm.updateCurrentWalk(newData);
       }
     });
-  };
+  }
 
-  const onFinish = () => {
+  function onFinish() {
     if (end) {
       Pedometer.stopUpdates();
       Realm.stopWalk(end, data);
     }
-  };
+  }
 
   let dt = 0,
     elapsedTime;

@@ -33,14 +33,14 @@ export default function MainStack() {
   const [showPopupLogout, setShowPopupLogout] = useState(false);
   const [showPopupDelete, setShowPopupDelete] = useState(false);
 
-  const logout = async () => {
+  async function logout() {
     if (!isActiveRoute('Home')) {
       navigationRef.current?.navigate('Home');
     }
     setIsMenuOpen(false);
     await Realm.destroyUser();
     navigationRef.current?.navigate('OnboardingStack');
-  };
+  }
 
   async function deleteUser() {
     const appUser = await Realm.getUser();

@@ -33,16 +33,16 @@ export default function WelcomeScreen({navigation}) {
   const [isLoading, setLoading] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
 
-  const selectLanguage = lang => {
+  function selectLanguage(lang) {
     setLanguage(lang);
     moment.locale(lang);
     Strings.setLanguage(lang);
     Realm.getSettings().then(settings =>
       Realm.write(() => (settings.lang = lang)),
     );
-  };
+  }
 
-  const continuePressed = () => {
+  function continuePressed() {
     setLoading(true);
     Realm.updateContest()
       .then(contest => {
@@ -53,7 +53,7 @@ export default function WelcomeScreen({navigation}) {
         setLoading(false);
         setShowAlert(true);
       });
-  };
+  }
 
   return (
     <SafeAreaView style={GlobalStyles.container}>

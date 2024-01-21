@@ -30,7 +30,7 @@ export default function TopWalkersScreen() {
     };
   }, []);
 
-  const fetchData = () => {
+  function fetchData() {
     setRefreshing(true);
     isCancelledRef.current = false;
     Promise.all([Realm.getUser(), Realm.getContest()])
@@ -45,17 +45,17 @@ export default function TopWalkersScreen() {
           setRefreshing(false);
         }
       });
-  };
+  }
 
-  const positionFontSize = num => {
+  function positionFontSize(num) {
     const baseFontSize = 30;
     const fontSizeMultiplier = 4;
     const numLength = num?.toString().length ?? 1;
 
     return baseFontSize - (numLength - 1) * fontSizeMultiplier;
-  };
+  }
 
-  const positionCard = (participant, userId, additionalStyles = {}) => {
+  function positionCard(participant, userId, additionalStyles = {}) {
     return (
       <View
         key={participant.rank}
@@ -85,7 +85,7 @@ export default function TopWalkersScreen() {
         </View>
       </View>
     );
-  };
+  }
 
   const user = walkers?.find(o => o.device_id === deviceId);
   let flyoutState = user && user.rank > 10;
