@@ -10,7 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@ovalmoney/react-native-fitness": "^0.5.3",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-community/push-notification-ios": "^1.11.0",
     "@react-navigation/native": "^6.1.7",
