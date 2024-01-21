@@ -14,7 +14,7 @@ import {Colors, GlobalStyles} from '../../styles';
 import {Fitness, Strings} from '../../lib';
 
 export default function InfoScreen({navigation}) {
-  const onNextPress = () => {
+  function onNextPress() {
     Fitness.requestPermissions()
       .then(permitted => {
         if (permitted) {
@@ -25,7 +25,7 @@ export default function InfoScreen({navigation}) {
         }
       })
       .catch(err => console.log(err));
-  };
+  }
 
   return (
     <SafeAreaView style={GlobalStyles.container}>
