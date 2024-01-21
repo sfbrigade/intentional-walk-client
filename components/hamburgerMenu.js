@@ -40,11 +40,15 @@ export default function HamburgerMenu(props) {
   const [contest, setContest] = useState(null);
 
   useEffect(() => {
+    let cleanup;
+    Realm.addContestListener(newContest =>
+      setContest(newContest?.toObject()),
+    ).then(newCleanup => (cleanup = newCleanup));
+
     async function getInitialData() {
-      const [user, goals, newContest] = await Promise.all([
+      const [user, goals] = await Promise.all([
         Realm.getUser(),
         Realm.getWeeklyGoals(),
-        Realm.getContest(),
       ]);
 
       if (user) {
@@ -54,13 +58,10 @@ export default function HamburgerMenu(props) {
       if (goals.length) {
         setHasGoals(true);
       }
-
-      if (newContest) {
-        setContest(newContest.toObject());
-      }
     }
-
     getInitialData();
+
+    return () => cleanup?.();
   }, []);
 
   const onPress = route => {
