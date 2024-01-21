@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {SafeAreaView, ScrollView, View} from 'react-native';
 import Autolink from 'react-native-autolink';
 import {PageTitle} from '../../components';
