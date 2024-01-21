@@ -12,7 +12,7 @@ import {
   Image,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import SplashScreen from 'react-native-splash-screen';
+import BootSplash from 'react-native-bootsplash';
 
 import {ENV_NAME} from '@env';
 
@@ -226,7 +226,7 @@ export default function HomeScreen({navigation, route}) {
 
   /// perform a bunch of other one-time checks/setup on app launch
   useEffect(() => {
-    SplashScreen.hide();
+    BootSplash.hide();
     /// check for updated contest info
     Realm.updateContest();
     /// load settings
