@@ -25,12 +25,14 @@ export default function OnboardingStack() {
     <Stack.Navigator
       screenOptions={{
         title: null,
+        // eslint-disable-next-line react/no-unstable-nested-components
         headerBackImage: () => (
           <Icon name="chevron-left" size={28} color={Colors.primary.purple} />
         ),
         headerBackTitle: Strings.common.back.toUpperCase(),
         headerBackTitleVisible: true,
         headerTintColor: Colors.primary.purple,
+        // eslint-disable-next-line react/no-unstable-nested-components
         headerTitle: props => <Logo />,
         headerTitleContainerStyle: Platform.select({
           android: GlobalStyles.androidNavHeaderCentered,
