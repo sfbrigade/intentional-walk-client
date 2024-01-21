@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import {
   ActivityIndicator,
   BackHandler,
@@ -54,20 +54,23 @@ export default function SignUpScreen({navigation, route}) {
 
   useFocusEffect(
     useCallback(() => {
-      const onBackPress = () => {
+      function onBackPress() {
         if (showAlert) {
           setShowAlert(false);
           return true;
         } else if (showPrivacyPolicy) {
           setShowPrivacyPolicy(false);
           return true;
+        } else if (showContestRules) {
+          setShowContestRules(false);
+          return true;
         }
         return false;
-      };
+      }
       BackHandler.addEventListener('hardwareBackPress', onBackPress);
       return () =>
         BackHandler.removeEventListener('hardwareBackPress', onBackPress);
-    }),
+    }, [showAlert, showPrivacyPolicy, showContestRules]),
   );
 
   async function onSubmit() {

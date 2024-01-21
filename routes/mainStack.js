@@ -63,6 +63,7 @@ export default function MainStack() {
         <Stack.Navigator
           screenOptions={{
             title: null,
+            // eslint-disable-next-line react/no-unstable-nested-components
             headerBackImage: () => (
               <Icon
                 name="chevron-left"
@@ -73,12 +74,14 @@ export default function MainStack() {
             headerBackTitle: Strings.common.back.toUpperCase(),
             headerBackTitleVisible: true,
             headerTintColor: Colors.primary.purple,
+            // eslint-disable-next-line react/no-unstable-nested-components
             headerRight: props => <Logo />,
           }}>
           <Stack.Screen
             name="Home"
             component={HomeScreen}
             options={{
+              // eslint-disable-next-line react/no-unstable-nested-components
               headerLeft: () => (
                 <HamburgerButton onPress={() => setIsMenuOpen(!isMenuOpen)} />
               ),
