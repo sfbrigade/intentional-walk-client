@@ -36,6 +36,18 @@ platform :android do
 
   desc "Deploy a new Beta version to the Google Play internal track"
   lane :beta do
+    env_name = nil
+    File.open('../../.env').each do |line|
+      tokens = line.split('=')
+      if tokens[0] == 'ENV_NAME'
+        env_name = tokens[1]
+      end
+    end
+    if env_name.nil?
+      puts "Missing/invalid .env in root of project"
+      return
+    end
+
     # get (prev?) version of app
     prev_version = get_build_gradle_version(path: "../app/build.gradle").to_i
     new_version = prev_version + 1
@@ -58,6 +70,7 @@ platform :android do
     `mkdir -p metadata/android/en-US/changelogs`
     changelog = `git log --pretty=format:'%s' And-#{prev_version}..HEAD`
     changelog = changelog.gsub(/(Android|iOS) build \d+\n?/, '')
+    changelog = "Android build #{new_version} (#{env_name})\n\n#{changelog}"
     File.write(filename, changelog)
     while File.size(filename) > 500
       puts "Changelog greater than 500 characters- please edit #{filename} before continuing!"
@@ -69,7 +82,7 @@ platform :android do
     # if successful, commit build version changes and tag
     if commit_after_upload
       `git add ../..`
-      `git commit -m "Android build #{new_version}"`
+      `git commit -m "Android build #{new_version} (#{env_name})"`
       `git tag And-#{new_version}`
       `git push`
       `git push --tag`
