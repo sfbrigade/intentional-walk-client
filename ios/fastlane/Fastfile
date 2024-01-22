@@ -31,7 +31,7 @@ platform :ios do
     end
 
     # get bundle version of app
-    prev_version = get_info_plist_value(path: "./IntentionalWalkApp/Info.plist", key: "CFBundleVersion").to_i
+    prev_version = get_info_plist_value(path: "./IntentionalWalkClient/Info.plist", key: "CFBundleVersion").to_i
     new_version = prev_version + 1
 
     # check if we're deploying a new version
@@ -41,7 +41,7 @@ platform :ios do
     commit_after_upload = true
     if head_commit != prev_commit
       # increment build
-      increment_build_number(xcodeproj: "IntentionalWalkApp.xcodeproj")
+      increment_build_number(xcodeproj: "IntentionalWalkClient.xcodeproj")
     else
       # adjust version numbers
       prev_version -= 1
@@ -54,8 +54,8 @@ platform :ios do
     changelog = "iOS build #{new_version} (#{env_name})\n\n#{changelog}"
     puts "\n\n#{changelog}\n\n"
     build_app(
-      workspace: "IntentionalWalkApp.xcworkspace",
-      scheme: "IntentionalWalkApp",
+      workspace: "IntentionalWalkClient.xcworkspace",
+      scheme: "IntentionalWalkClient",
       export_method: 'app-store',
       export_options: {
         provisioningProfiles: {
