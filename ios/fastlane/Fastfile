@@ -22,7 +22,7 @@ platform :ios do
     File.open('../../.env').each do |line|
       tokens = line.split('=')
       if tokens[0] == 'ENV_NAME'
-        env_name = tokens[1]
+        env_name = tokens[1].strip
       end
     end
     if env_name.nil?
