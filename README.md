@@ -18,7 +18,7 @@ Contact another developer or admin on this project and:
 
   * In the `android` directory, copy `example.env` to `.env` and set the password for the production signing keystore.
 
-  * In the `android` directory, save a copy of the `intentional-walk-upload-key.keystore` production signing keystore.
+  * In the `android/app` directory, save a copy of the `intentional-walk-upload-key.keystore` production signing keystore.
 
   * In the `android/fastlane` directory, save a copy of the `key.json` for the Google Play service account used to automate release uploads.
 
