@@ -58,6 +58,10 @@ npm run android
 yarn android
 ```
 
+For Android, it should launch the emulator running in a configured Android Virtual Device. If not,
+launch Android Studio, go to "More actions...", "Virtual Device Manager", and press the triangle
+Play button next to a listed emulator. Note that the installation may fail if the device is still booting- if so, wait for the emulator to fully boot to the lock/home screen, and run the command again.
+
 ### For iOS
 
 ```bash
@@ -66,6 +70,19 @@ npm run ios
 
 # OR using Yarn
 yarn ios
+```
+
+To specify a specific simulator iOS device:
+
+```bash
+# using npm
+npm run ios -- --simulator="iPhone 15"
+```
+
+To view a list of simulators installed on your computer:
+
+```bash
+xcrun simctl list
 ```
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
