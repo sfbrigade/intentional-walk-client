@@ -50,7 +50,7 @@ platform :ios do
     end
     # generate a changelog from previous version to head
     changelog = `git log --pretty=format:'%s' iOS-#{prev_version}..HEAD`
-    changelog = changelog.gsub(/(Android|iOS) build \d+\n?/, '')
+    changelog = changelog.gsub(/(Android|iOS) build \d+[^\n]+\n?/, '')
     changelog = "iOS build #{new_version} (#{env_name})\n\n#{changelog}"
     puts "\n\n#{changelog}\n\n"
     build_app(
