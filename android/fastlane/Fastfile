@@ -69,7 +69,7 @@ platform :android do
     filename = "metadata/android/en-US/changelogs/#{new_version}.txt"
     `mkdir -p metadata/android/en-US/changelogs`
     changelog = `git log --pretty=format:'%s' And-#{prev_version}..HEAD`
-    changelog = changelog.gsub(/(Android|iOS) build \d+\n?/, '')
+    changelog = changelog.gsub(/(Android|iOS) build \d+[^\n]*\n?/, '')
     changelog = "Android build #{new_version} (#{env_name})\n\n#{changelog}"
     File.write(filename, changelog)
     while File.size(filename) > 500
