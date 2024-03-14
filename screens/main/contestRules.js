@@ -12,28 +12,14 @@ export default function ContestRulesScreen() {
   const [contest, setContest] = useState(null);
 
   useEffect(() => {
-    Realm.getContest().then(newContest =>
-      setContest(newContest ? newContest.toObject() : null),
-    );
+    Realm.getContest().then(newContest => setContest(newContest?.toObject()));
   }, []);
 
-  let from = null,
-    to = null,
-    fromEn = null,
-    toEn = null;
-  // English Contest Rules use long form of date (rangeTo format)
-  // Other languages use short form (dateSlash format)
+  let from = '';
+  let to = '';
   if (contest) {
     from = moment(contest.start).format(Strings.common.dateSlash);
     to = moment(contest.end).format(Strings.common.dateSlash);
-    fromEn = moment(contest.start).format(Strings.common.rangeTo);
-    toEn = moment(contest.end).format(Strings.common.rangeTo);
-  } else {
-    // default value just in case contest is unavailable
-    from = '09/01/2021';
-    to = '09/30/2021';
-    fromEn = 'September 1, 2021';
-    toEn = 'September 30, 2021';
   }
 
   return (
@@ -45,8 +31,6 @@ export default function ContestRulesScreen() {
             <Autolink
               text={Strings.formatString(
                 ContestRules[Strings.getLanguage()],
-                fromEn,
-                toEn,
                 from,
                 to,
               )}
