@@ -12,8 +12,8 @@ Cómo participar
 
 Fechas del programa
 
-* Inicio: 06/01/2023, a las 12:00 a. m., hora del Pacífico.
-* Conclusión: 08/31/2023, a las 11:59 p. m., hora del Pacífico.
+* Inicio: {0}, a las 12:00 a. m., hora del Pacífico.
+* Conclusión: {1}, a las 11:59 p. m., hora del Pacífico.
 
 Premio(s)
 

@@ -12,8 +12,8 @@ How to Enter
 
 Program Dates
 
-* Starts: 06/01/2023, 12:00 AM PST.
-* Ends: 08/31/2023, 11:59 PM PST.
+* Starts: {0}, 12:00 AM PST.
+* Ends: {1}, 11:59 PM PST.
 
 The Prize(s)
 
