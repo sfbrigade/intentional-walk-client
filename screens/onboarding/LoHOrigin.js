@@ -62,6 +62,10 @@ export default function LoHOriginScreen({navigation, route}) {
     <SafeAreaView style={GlobalStyles.container}>
       <ScrollView style={GlobalStyles.container}>
         <View style={styles.content}>
+          <Text style={GlobalStyles.h1}>{Strings.common.welcome}</Text>
+          <Text style={[GlobalStyles.h3, styles.textSelect]}>
+            {Strings.latinOrHispanicOrigin.select}
+          </Text>
           <MultipleChoiceQuestion
             text={Strings.latinOrHispanicOrigin.question}
             subText={Strings.latinOrHispanicOrigin.questionSub}
@@ -79,6 +83,9 @@ export default function LoHOriginScreen({navigation, route}) {
             ))}
           </MultipleChoiceQuestion>
           <View style={styles.content}>
+            <Text style={[GlobalStyles.h3, styles.textDisclaimer]}>
+              {Strings.latinOrHispanicOrigin.disclaimer}
+            </Text>
             <Button
               style={styles.button}
               isEnabled={isValid()}
@@ -108,6 +115,12 @@ const styles = StyleSheet.create({
   content: {
     ...GlobalStyles.content,
     alignItems: 'center',
+  },
+  textSelect: {
+    maxWidth: 220,
+  },
+  textDisclaimer: {
+    maxWidth: 280,
   },
   alertText: {
     textAlign: 'center',
