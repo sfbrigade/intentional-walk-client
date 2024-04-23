@@ -264,7 +264,7 @@ export default function SetYourStepTarget({navigation, route}) {
                 ? Strings.common.save
                 : Strings.common.next}
             </Button>
-            {!route.params?.fromProgress ?? (
+            {!route.params?.fromProgress && (
               <PaginationDots currentPage={6} totalPages={8} />
             )}
           </View>
