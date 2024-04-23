@@ -97,9 +97,14 @@ export default function SignUpScreen({navigation, route}) {
     }
     /// validate age
     const parsedAge = parseInt(age, 10);
-    if (isNaN(parsedAge) || parsedAge < 18 || parsedAge > 110) {
+    if (isNaN(parsedAge) || parsedAge < 18) {
       setAlertTitle(Strings.signUp.ageAlertTitle);
-      setAlertMessage(Strings.signUp.ageAlertMessage);
+      setAlertMessage(Strings.signUp.ageMinMessage);
+      setShowAlert(true);
+      return;
+    } else if (parsedAge > 110) {
+      setAlertTitle(Strings.signUp.ageAlertTitle);
+      setAlertMessage(Strings.signUp.ageMaxMessage);
       setShowAlert(true);
       return;
     }
