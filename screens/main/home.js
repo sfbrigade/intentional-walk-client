@@ -493,9 +493,7 @@ export default function HomeScreen({navigation, route}) {
               </View>
               {recordedWalks && recordedWalks.length === 0 && (
                 <RecordedWalk
-                  title={
-                    isToday ? Strings.common.noWalksYet : Strings.common.noWalks
-                  }
+                  title={Strings.common.noWalks}
                   subtitle={isToday ? Strings.home.noWalksYetText : null}
                 />
               )}

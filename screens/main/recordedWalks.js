@@ -36,7 +36,7 @@ export default function RecordedWalksScreen({navigation}) {
                   {recordedWalks.length === 0 && (
                     <RecordedWalk
                       style={styles.walk}
-                      title={Strings.common.noWalksYet}
+                      title={Strings.common.noWalks}
                     />
                   )}
                 </>
