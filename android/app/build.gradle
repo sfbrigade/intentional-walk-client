@@ -84,7 +84,7 @@ android {
         applicationId "org.codeforsanfrancisco.intentionalwalk"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 76
+        versionCode 77
         versionName "3.0.2"
     }
     signingConfigs {
