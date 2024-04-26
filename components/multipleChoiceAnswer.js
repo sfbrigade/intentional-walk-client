@@ -24,7 +24,7 @@ export default function MultipleChoiceAnswer(props) {
         containerStyle={styles.container}
         onPress={() => props.onPress()}
       />
-      <View>
+      <View style={styles.label}>
         <Text style={styles.text}>{props.text}</Text>
         {props.subText ? (
           <Text style={styles.subText}>{props.subText}</Text>
@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
     marginTop: 0,
     marginBottom: 2,
     paddingLeft: 14,
+    paddingRight: 8,
     borderRadius: GlobalStyles.rounded.borderRadius,
     backgroundColor: 'white',
     shadowColor: GlobalStyles.boxShadow.shadowColor,
@@ -58,6 +59,9 @@ const styles = StyleSheet.create({
     shadowOpacity: GlobalStyles.boxShadow.shadowOpacity,
     shadowRadius: GlobalStyles.boxShadow.shadowRadius,
     elevation: GlobalStyles.boxShadow.elevation,
+  },
+  label: {
+    flexShrink: 1,
   },
   text: {
     fontWeight: 'bold',

@@ -38,6 +38,13 @@ export default StyleSheet.create({
     textAlign: 'left',
     marginBottom: 10,
   },
+  h3: {
+    color: Colors.primary.purple,
+    fontSize: 18,
+    fontWeight: '500',
+    textAlign: 'center',
+    marginBottom: 36,
+  },
   p1: {
     color: Colors.primary.gray2,
     fontSize: 12,

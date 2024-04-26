@@ -6,9 +6,16 @@ export default function MultipleChoiceQuestion(props) {
   return (
     <View style={[styles.wrapper, props.style]}>
       <View style={styles.content}>
-        <Text style={styles.text}>{props.text}</Text>
+        <Text style={styles.text} adjustsFontSizeToFit={true} numberOfLines={2}>
+          {props.text}
+        </Text>
         {props.subText ? (
-          <Text style={styles.subText}>{props.subText}</Text>
+          <Text
+            style={styles.subText}
+            adjustsFontSizeToFit={true}
+            numberOfLines={1}>
+            {props.subText}
+          </Text>
         ) : (
           <></>
         )}

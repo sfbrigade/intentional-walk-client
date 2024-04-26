@@ -99,7 +99,7 @@ export default function SignUpScreen({navigation, route}) {
     const parsedAge = parseInt(age, 10);
     if (isNaN(parsedAge) || parsedAge < 18) {
       setAlertTitle(Strings.signUp.ageAlertTitle);
-      setAlertMessage(Strings.signUp.ageAlertMessage);
+      setAlertMessage(Strings.signUp.ageMinMessage);
       setShowAlert(true);
       return;
     } else if (parsedAge > 110) {
