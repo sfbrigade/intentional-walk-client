@@ -118,7 +118,7 @@ export default function WhatIsSexualOrientationScreen({navigation, route}) {
               style={styles.button}
               isEnabled={isValid()}
               onPress={onNextPress}>
-              {Strings.common.next}
+              {Strings.common.submit}
             </Button>
             <PaginationDots currentPage={5} totalPages={8} />
           </View>
