@@ -74,28 +74,21 @@ export default function SignUpScreen({navigation, route}) {
   );
 
   async function onSubmit() {
-    /// validate email
+    // validate email
     if (!email.trim().match(/^[^@ ]+@[^. ]+(?:\.[^. ]+)+$/)) {
       setAlertTitle(Strings.signUp.emailAlertTitle);
       setAlertMessage(Strings.signUp.emailAlertMessage);
       setShowAlert(true);
       return;
     }
-    /// validate zip-5 digits
-    if (!zip.trim().match(/^\d{5}$/)) {
-      setAlertTitle(Strings.signUp.zipAlertTitle);
-      setAlertMessage(Strings.signUp.zipAlertMessage);
-      setShowAlert(true);
-      return;
-    }
-    //validate zip- sf resident
-    else if (!validZipCodes.includes(zip.trim())) {
+    // validate zip- sf resident
+    if (!validZipCodes.includes(zip.trim())) {
       setAlertTitle(Strings.signUp.zipRestrictionAlertTitle);
       setAlertMessage(Strings.signUp.zipRestrictionAlertMessage);
       setShowAlert(true);
       return;
     }
-    /// validate age
+    // validate age
     const parsedAge = parseInt(age, 10);
     if (isNaN(parsedAge) || parsedAge < 18) {
       setAlertTitle(Strings.signUp.ageAlertTitle);
@@ -270,7 +263,7 @@ export default function SignUpScreen({navigation, route}) {
               isEnabled={isValid()}
               style={styles.button}
               onPress={onSubmit}>
-              {Strings.signUp.submit}
+              {Strings.common.next}
             </Button>
           )}
           <PaginationDots currentPage={1} totalPages={8} />
