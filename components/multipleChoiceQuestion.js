@@ -13,7 +13,7 @@ export default function MultipleChoiceQuestion(props) {
           <Text
             style={styles.subText}
             adjustsFontSizeToFit={true}
-            numberOfLines={1}>
+            numberOfLines={2}>
             {props.subText}
           </Text>
         ) : (
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
   content: {
     minHeight: 68,
     width: '100%',
-    paddingTop: 0,
-    paddingBottom: 2,
+    paddingTop: 10,
+    paddingBottom: 12,
     paddingLeft: 28,
     paddingRight: 28,
     marginTop: 0,
