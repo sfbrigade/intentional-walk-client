@@ -118,7 +118,7 @@ export default function SignUpScreen({navigation, route}) {
       });
       setLoading(false);
       if (user.isSurveyCompleted) {
-        navigation.navigate('Info');
+        navigation.navigate('SetYourStepGoal');
       } else {
         navigation.navigate('LoHOrigin');
       }
