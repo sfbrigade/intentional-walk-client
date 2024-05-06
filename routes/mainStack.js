@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
   },
   popupConfirmButton: {
     ...GlobalStyles.boxShadow,
-    backgroundColor: Colors.primary.lightGray,
+    backgroundColor: Colors.secondary.lightGray2,
   },
   popupConfirmText: {
     color: Colors.primary.purple,
