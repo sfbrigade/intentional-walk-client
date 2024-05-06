@@ -493,7 +493,9 @@ export default function HomeScreen({navigation, route}) {
               </View>
               {recordedWalks && recordedWalks.length === 0 && (
                 <RecordedWalk
-                  title={isToday ? Strings.home.noWalksYet : Strings.common.noWalks}
+                  title={
+                    isToday ? Strings.home.noWalksYet : Strings.common.noWalks
+                  }
                   subtitle={isToday ? Strings.home.noWalksYetText : null}
                 />
               )}
@@ -608,7 +610,7 @@ const styles = StyleSheet.create({
   },
   walkWatermarkWhere: {
     bottom: -3,
-    height: 64
+    height: 64,
   },
   goalWatermark: {
     position: 'absolute',
