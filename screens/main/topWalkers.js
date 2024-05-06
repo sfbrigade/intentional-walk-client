@@ -12,11 +12,13 @@ import {
 import {useSafeArea} from 'react-native-safe-area-context';
 import {GlobalStyles, Colors} from '../../styles';
 import {Api, Realm, Strings} from '../../lib';
+import moment from 'moment';
 import numeral from 'numeral';
 
 export default function TopWalkersScreen() {
   const safeAreaInsets = useSafeArea();
 
+  const [contest, setContest] = useState();
   const [deviceId, setDeviceId] = useState();
   const [refreshing, setRefreshing] = useState(false);
   const [walkers, setWalkers] = useState();
@@ -34,9 +36,10 @@ export default function TopWalkersScreen() {
     setRefreshing(true);
     isCancelledRef.current = false;
     Promise.all([Realm.getUser(), Realm.getContest()])
-      .then(([user, contest]) => {
+      .then(([user, newContest]) => {
+        setContest(newContest);
         setDeviceId(user?.id);
-        return Api.leaderboard.get(user?.id, contest?.id);
+        return Api.leaderboard.get(user?.id, newContest?.id);
       })
       .then(response => {
         if (!isCancelledRef.current) {
@@ -111,27 +114,44 @@ export default function TopWalkersScreen() {
               source={require('../../assets/top_walkers.png')}
             />
           </View>
-          {refreshing ? (
-            <ActivityIndicator
-              size="large"
-              style={[styles.spinner]}
-              color={Colors.primary.lightGray}
-            />
-          ) : (
-            walkers?.slice(0, 10).map((participant, index) => {
-              const additionalStyles =
-                deviceId === participant.device_id
-                  ? {backgroundColor: Colors.accent.teal}
-                  : {};
-              return positionCard(
-                participant,
-                deviceId,
-                additionalStyles,
-                index + 1,
-              );
-            })
+          {contest && !contest?.isDuringContest && (
+            <>
+              <Text style={[GlobalStyles.h2, styles.noContestText]}>
+                {Strings.formatString(
+                  Strings.leaderBoard.available,
+                  Strings.formatString(
+                    Strings.common.range,
+                    moment(contest.start).format('M/D'),
+                    moment(contest.end).format('M/D'),
+                  ),
+                )}
+              </Text>
+              <Text style={[GlobalStyles.h2, styles.noContestText]}>
+                {Strings.leaderBoard.keepWalking}
+              </Text>
+            </>
           )}
-
+          {(!contest || contest?.isDuringContest) &&
+            (refreshing ? (
+              <ActivityIndicator
+                size="large"
+                style={[styles.spinner]}
+                color={Colors.primary.lightGray}
+              />
+            ) : (
+              walkers?.slice(0, 10).map((participant, index) => {
+                const additionalStyles =
+                  deviceId === participant.device_id
+                    ? {backgroundColor: Colors.accent.teal}
+                    : {};
+                return positionCard(
+                  participant,
+                  deviceId,
+                  additionalStyles,
+                  index + 1,
+                );
+              })
+            ))}
           {walkers && walkers.length > 10 && (
             <View style={styles.ellipsisContainer}>
               <View style={styles.verticalEllipsis} />
@@ -139,7 +159,6 @@ export default function TopWalkersScreen() {
               <View style={styles.verticalEllipsis} />
             </View>
           )}
-
           {flyoutState && <View style={[styles.flyoutPlaceholder]} />}
         </View>
       </ScrollView>
@@ -255,5 +274,12 @@ const styles = StyleSheet.create({
   },
   spinner: {
     paddingTop: 96,
+  },
+  noContestText: {
+    color: 'white',
+    textAlign: 'center',
+    maxWidth: 320,
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
 });

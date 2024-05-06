@@ -434,31 +434,28 @@ export default function HomeScreen({navigation, route}) {
                   </View>
                 </TouchableOpacity>
               </View>
-              {contest &&
-                (contest.isDuringContest || contest.isWeekAfterEndDate) && (
-                  <View
-                    style={[styles.row, isToday ? null : styles.hidden]}
-                    pointerEvents={isToday ? 'auto' : 'none'}>
-                    <TouchableOpacity
-                      style={styles.box}
-                      onPress={() => navigation.navigate('TopWalkers')}>
-                      <View style={[styles.walkBox]}>
-                        <Text style={styles.walkText}>
-                          {Strings.home.topWalkers}
-                        </Text>
-                        <Icon
-                          style={styles.walkChevron}
-                          name="chevron-right"
-                          size={30}
-                        />
-                        <Image
-                          style={[styles.walkWatermark]}
-                          source={require('../../assets/HomePageTopWalkers.png')}
-                        />
-                      </View>
-                    </TouchableOpacity>
+              <View
+                style={[styles.row, isToday ? null : styles.hidden]}
+                pointerEvents={isToday ? 'auto' : 'none'}>
+                <TouchableOpacity
+                  style={styles.box}
+                  onPress={() => navigation.navigate('TopWalkers')}>
+                  <View style={[styles.walkBox]}>
+                    <Text style={styles.walkText}>
+                      {Strings.home.topWalkers}
+                    </Text>
+                    <Icon
+                      style={styles.walkChevron}
+                      name="chevron-right"
+                      size={30}
+                    />
+                    <Image
+                      style={[styles.walkWatermark]}
+                      source={require('../../assets/HomePageTopWalkers.png')}
+                    />
                   </View>
-                )}
+                </TouchableOpacity>
+              </View>
               <View
                 style={[styles.row, isToday ? null : styles.hidden]}
                 pointerEvents={isToday ? 'auto' : 'none'}>
