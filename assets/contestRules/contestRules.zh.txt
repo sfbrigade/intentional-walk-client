@@ -1,13 +1,13 @@
 參賽資格
 
-* 該計劃向符合CalFresh/Medi-Cal 資格San Francisco居民開放。
+* 該計劃向符合CalFresh/Medi-Cal資格San Francisco居民開放, 18嵗以上。
 
 參賽方式
 
 * 下載免費的Intentional Walk（有意圖的行走）應用程序。
 * 在應用程式商店中搜尋「Intentional Walk」。
 * 遵循註冊介面的指示，創建帳戶。
-* 開始行走！您可選擇性地記錄您的步數。這款應用程式將透過您手機上的保健應用程式（Apple Health 或Google Fit）自動追蹤您的步數。
+* 開始行走！您可選擇性地記錄您的步數。這款應用程式將透過您手機上的保健應用程式（Apple Health或Google Fit）自動追蹤您的步數。
 * 如需更多資訊，請造訪： iwalk.c4sf.me
 
 計劃日期
@@ -17,13 +17,13 @@
 
 獎項設置
 
-* 在計劃結束時，位於步數排行榜前10 名的參賽者將收到電郵通知，以領取相應獎勵。
+* 在計劃結束時，位於步數排行榜前10名的參賽者將收到電郵通知，以領取相應獎勵。
 * 除非另有說明，若獲勝者未在三 (3) 天內給出回覆，獎項將頒發給排行榜中的下一名參賽者。
-* 請注意：參賽者每次打開這款應用程式時，應用程式將自動更新其步數。使用者在打開應用程式時，步數排行榜亦將自動更新。如需將您所有的步數計算在內，請在競賽最後一日（2023 年8 月31 日）打開應用程式。
+* 請注意：參賽者每次打開這款應用程式時，應用程式將自動更新其步數。使用者在打開應用程式時，步數排行榜亦將自動更新。如需將您所有的步數計算在內，請在競賽最後一日（{1}）打開應用程式。
 
 雜項
 
-* Intentional Walk 由San Francisco 公共衛生局運營，並獲美國農業部 (United States Department of Agriculture, USDA) 補充營養援助計劃 (Supplemental Nutrition Assistance Program, SNAP) 的贊助支持。USDA 是一個平等機會的提供者和雇主。社區合作夥伴包括加州公共衛生局、Code for San Francisco、San Francisco Giants 以及San Francisco 娛樂與公園管理局。
-* San Francisco 公共衛生局保留更改比賽規則、計劃日期和獎項頒發日期的權利。
+* Intentional Walk由San Francisco公共衛生局運營。由平等機會提供者USDA SNAP出資。社區合作夥伴包括加州公共衛生局，Code for San Francisco，San Francisco Giants以及San Francisco 休閒及公園管理局。
+* San Francisco公共衛生局保留更改比賽規則，計劃日期和獎項頒發日期的權利。
 * 您可從隱私政策中找到關於隱私的資訊。
-* Apple 和Google 並非此次競賽的贊助商，不對比賽規則及結果負責。
+* Apple和Google並非此次競賽的贊助商，不對比賽規則及結果負責。

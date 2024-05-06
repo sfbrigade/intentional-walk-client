@@ -1,29 +1,29 @@
 Quién puede participar
 
-* El programa está dirigido a los residentes de San Francisco que son elegibles para CalFresh/Medi-Cal.
+* El programa está dirigido a los residentes de San Francisco que son elegibles para CalFresh/Medi-Cal, mayores de 18 años.
 
 Cómo participar
 
-* Para participar, descargue la aplicación GRATUITA Intentional Walk.
-* Busque Intentional Walk en la tienda de aplicaciones.
-* Siga las instrucciones que aparecen en la pantalla de registro para crear un perfil.
-* ¡Comience a caminar! El registro de sus caminatas es opcional. La aplicación registrará automáticamente sus pasos mediante la aplicación de salud de su teléfono (Apple Health o Google Fit).
-* Para obtener más información, visite: iwalk.c4sf.me.
+* Para participar, descarga la aplicación GRATUITA Intentional Walk.
+* Busca Intentional Walk en la tienda de aplicaciones.
+* Sigue las instrucciones que aparecen en la pantalla de registro para crear un perfil.
+* ¡Comienza a caminar! El registro de tus caminatas es opcional. La aplicación registrará automáticamente tus pasos mediante la aplicación de salud de tu teléfono (Apple Health o Google Fit).
+* Para obtener más información, visita: iwalk.c4sf.me
 
 Fechas del programa
 
-* Inicio: {0}, a las 12:00 a. m., hora del Pacífico.
-* Conclusión: {1}, a las 11:59 p. m., hora del Pacífico.
+* Inicio: {0}, a las 12:00 a. m., hora del Pacífico.
+* Conclusión: {1}, a las 11:59 p. m., hora del Pacífico
 
 Premio(s)
 
-* Al final del programa, los 10 mejores participantes recibirán un correo electrónicopara reclamar su premio.
-* A menos que se indique lo contrario, si el ganador no responde en el plazo de tres (3) días, otorgaremos el premio al siguiente mejor participante.
-* Tome en cuenta lo siguiente: La aplicación actualiza el conteo de pasos del participante cada vez que abre la aplicación. La lista de los mejores participantes se actualiza cada vez que el usuario abre la aplicación. Para registrar todos sus pasos, abra la aplicación durante el último día del concurso, el 08/31/2023.
+* Al final del programa, los 10 mejores participantes recibirán un correo electrónico para reclamar su premio.
+* A menos que se indique lo contrario, si el ganador no responde en un plazo de tres (3) días, otorgaremos el premio al siguiente mejor participante.
+* Toma en cuenta lo siguiente: La aplicación actualiza el conteo de pasos del participante cada vez que abre la aplicación. La lista de los mejores participantes se actualiza cada vez que el usuario abre la aplicación. Para registrar todos tus pasos, abre la aplicación durante el último día del concurso, el {1}.
 
 Varios
 
-* Intentional Walk está dirigido por el Departamento de Salud Pública de San Francisco. Es financiado por el Programa de Asistencia Nutricional Suplementaria (Supplemental Nutrition Assistance Program, USDA SNAP) del Departamento de Agricultura de los Estados Unidos (United States Department of Agriculture, USDA). Entre los socios comunitarios, se encuentra el Departamento de Salud Pública de California, Code for San Francisco, los San Francisco Giants, y el Departamento de Parques y Recreación de San Francisco.
+* Intentional Walk está dirigido por el Departamento de Salud Pública de San Francisco. Es financiado por SNAP del USDA, un proveedor que brinda igualdad de oportunidades. Entre los socios comunitarios, se encuentra el Departamento de Salud Pública de California, Code for San Francisco, los Gigantes de San Francisco, y el Departamento de Recreación y Parques de San Francisco.
 * El Departamento de Salud Pública de San Francisco se reserva el derecho a modificar las reglas, el programa y las fechas de premiación.
-* Puede encontrar la información de privacidad en la Política de privacidad.
+* Puedes encontrar la información de privacidad en la Política de privacidad.
 * Apple y Google no patrocinan este concurso y no son responsables de las reglas ni de los resultados.
