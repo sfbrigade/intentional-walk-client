@@ -37,14 +37,8 @@ function HamburgerMenuItem(props) {
 export default function HamburgerMenu(props) {
   const [email, setEmail] = useState('');
   const [hasGoals, setHasGoals] = useState(false);
-  const [contest, setContest] = useState(null);
 
   useEffect(() => {
-    let cleanup;
-    Realm.addContestListener(newContest =>
-      setContest(newContest?.toObject()),
-    ).then(newCleanup => (cleanup = newCleanup));
-
     async function getInitialData() {
       const [user, goals] = await Promise.all([
         Realm.getUser(),
@@ -60,8 +54,6 @@ export default function HamburgerMenu(props) {
       }
     }
     getInitialData();
-
-    return () => cleanup?.();
   }, []);
 
   const onPress = route => {
@@ -117,14 +109,12 @@ export default function HamburgerMenu(props) {
           route={hasGoals ? 'GoalProgress' : 'SetYourStepGoal'}>
           {Strings.home.myGoals}
         </HamburgerMenuItem>
-        {contest && (contest.isDuringContest || contest.isWeekAfterEndDate) && (
-          <HamburgerMenuItem
-            onPress={() => onPress('TopWalkers')}
-            icon="star"
-            route="TopWalkers">
-            {Strings.home.topWalkers}
-          </HamburgerMenuItem>
-        )}
+        <HamburgerMenuItem
+          onPress={() => onPress('TopWalkers')}
+          icon="star"
+          route="TopWalkers">
+          {Strings.home.topWalkers}
+        </HamburgerMenuItem>
         <HamburgerMenuItem
           onPress={() => onPress('WhereToWalk')}
           icon="directions-walk"
