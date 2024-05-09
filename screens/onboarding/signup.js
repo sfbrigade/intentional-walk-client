@@ -293,7 +293,11 @@ export default function SignUpScreen({navigation, route}) {
             <Logo style={styles.privacyLogo} />
             <Text style={GlobalStyles.h1}>{Strings.common.contestRules}</Text>
             <Autolink
-              text={ContestRules[Strings.getLanguage()]}
+              text={Strings.formatString(
+                ContestRules[Strings.getLanguage()],
+                moment(contest.start).format(Strings.common.dateSlash),
+                moment(contest.end).format(Strings.common.dateSlash),
+              )}
               style={styles.privacyText}
             />
           </ScrollText>
