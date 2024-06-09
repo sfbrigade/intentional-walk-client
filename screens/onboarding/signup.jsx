@@ -30,6 +30,7 @@ import {Api, Realm, Strings} from '../../lib';
 import ContestRules from '../../assets/contestRules';
 import Privacy from '../../assets/privacy';
 import validZipCodes from '../../lib/validZipCodes';
+import {collectDeviceInfo} from '../../lib/deviceinfo';
 
 export default function SignUpScreen({navigation, route}) {
   const {contest} = route.params;
@@ -104,6 +105,11 @@ export default function SignUpScreen({navigation, route}) {
     setLoading(true);
     try {
       const settings = await Realm.getSettings();
+      // eslint-disable-next-line no-unused-vars
+      const {deviceType, deviceVersion} = collectDeviceInfo();
+      console.log('deviceType', deviceType, 'deviceVersion', deviceVersion);
+      // TODO: swap over to .createv2 once the API is updated
+      // drill in device info.
       const response = await Api.appUser.create(
         firstName.trim(),
         lastName.trim(),
@@ -117,16 +123,16 @@ export default function SignUpScreen({navigation, route}) {
         id: response.data.payload.account_id,
       });
       setLoading(false);
-      if (user.isSurveyCompleted) {
-        navigation.navigate('SetYourStepGoal');
-      } else {
-        navigation.navigate('LoHOrigin');
-      }
+      console.log('user', user.isSurveyCompleted);
+      navigation.navigate(
+        user.isSurveyCompleted ? 'SetYourStepGoal' : 'LoHOrigin',
+      );
     } catch (error) {
-      setLoading(false);
       setAlertTitle(Strings.common.serverErrorTitle);
       setAlertMessage(Strings.common.serverErrorMessage);
       setShowAlert(true);
+    } finally {
+      setLoading(false);
     }
   }
 
