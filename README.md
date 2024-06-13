@@ -2,30 +2,6 @@
 
 This is the new Intentional Walk iOS and Android client app codebase.
 
-# Deploying Releases
-
-## Step 1: Set up necessary credentials
-
-Contact another developer or admin on this project and:
-
-- Share the email address associated with an Apple ID that you will use to log in to the Apple Developer Program website. You will be invited to the developer team.
-
-  - In the `ios` directory, copy `example.env` to `.env` and set the email address associated with your Apple ID registered with the Apple Developer Program.
-
-  - Once you accept the invite, log in to the [Apple Developer](https://developer.apple.com/) website to download and install Xcode.
-
-- Share the email address associated with a Google Account that you will use to log in to the Google Play Console. You will then get the files and password to do the following:
-
-  - In the `android` directory, copy `example.env` to `.env` and set the password for the production signing keystore.
-
-  - In the `android/app` directory, save a copy of the `intentional-walk-upload-key.keystore` production signing keystore.
-
-  - In the `android/fastlane` directory, save a copy of the `key.json` for the Google Play service account used to automate release uploads.
-
-## Step 2: Set up command-line tools
-
-- In the root of the project, run `bundle` to install the deployment tools.
-
 # Getting Started
 
 > **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
@@ -110,6 +86,30 @@ You've successfully run and modified your React Native App. :partying_face:
 
 - If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
 - If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+
+# Deploying Releases
+
+## Step 1: Set up necessary credentials
+
+Contact another developer or admin on this project and:
+
+- Share the email address associated with an Apple ID that you will use to log in to the Apple Developer Program website. You will be invited to the developer team.
+
+  - In the `ios` directory, copy `example.env` to `.env` and set the email address associated with your Apple ID registered with the Apple Developer Program.
+
+  - Once you accept the invite, log in to the [Apple Developer](https://developer.apple.com/) website to download and install Xcode.
+
+- Share the email address associated with a Google Account that you will use to log in to the Google Play Console. You will then get the files and password to do the following:
+
+  - In the `android` directory, copy `example.env` to `.env` and set the password for the production signing keystore.
+
+  - In the `android/app` directory, save a copy of the `intentional-walk-upload-key.keystore` production signing keystore.
+
+  - In the `android/fastlane` directory, save a copy of the `key.json` for the Google Play service account used to automate release uploads.
+
+## Step 2: Set up command-line tools
+
+- In the root of the project, run `bundle` to install the deployment tools.
 
 # Troubleshooting
 
