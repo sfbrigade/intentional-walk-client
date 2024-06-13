@@ -22,6 +22,7 @@ import {GlobalStyles, Colors} from '../../styles';
 import {StatBox, RecordedWalk} from '../../components';
 import moment from 'moment';
 import numeral from 'numeral';
+import {useDeviceInfoCollector} from '../../hooks/useDeviceInfoCollector';
 
 export default function HomeScreen({navigation, route}) {
   const safeAreaInsets = useSafeArea();
@@ -39,6 +40,8 @@ export default function HomeScreen({navigation, route}) {
   const [recordedWalks, setRecordedWalks] = useState(null);
   const [activeWalk, setActiveWalk] = useState(null);
   const [hasGoals, setHasGoals] = useState(false);
+
+  useDeviceInfoCollector();
 
   async function saveStepsAndDistances() {
     const newContest = await Realm.getContest();
