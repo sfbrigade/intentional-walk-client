@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {
   Button,
   Input,
@@ -93,7 +94,7 @@ export default function WhatIsRaceScreen({navigation}) {
 
   return (
     <SafeAreaView style={GlobalStyles.container}>
-      <ScrollView style={GlobalStyles.container}>
+      <KeyboardAwareScrollView style={GlobalStyles.container}>
         <View style={styles.content}>
           <MultipleChoiceQuestion
             text={Strings.whatIsYourRace.question}
@@ -143,7 +144,7 @@ export default function WhatIsRaceScreen({navigation}) {
             <PaginationDots currentPage={3} totalPages={8} />
           </View>
         </View>
-      </ScrollView>
+      </KeyboardAwareScrollView>
       <Popup isVisible={showAlert} onClose={() => setShowAlert(false)}>
         <View style={GlobalStyles.centered}>
           <Text style={GlobalStyles.h1}>{alertTitle}</Text>
