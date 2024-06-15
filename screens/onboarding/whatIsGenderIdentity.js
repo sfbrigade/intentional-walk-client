@@ -1,5 +1,13 @@
 import React, {useState} from 'react';
-import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+  Platform,
+  KeyboardAvoidingView,
+} from 'react-native';
 import {
   Button,
   Input,
@@ -61,61 +69,65 @@ export default function WhatIsGenderIdentityScreen({navigation, route}) {
 
   return (
     <SafeAreaView style={GlobalStyles.container}>
-      <ScrollView style={GlobalStyles.container}>
-        <View style={styles.content}>
-          <MultipleChoiceQuestion
-            text={Strings.whatIsYourGenderIdentity.question}
-            subText={Strings.whatIsYourGenderIdentity.questionSub}
-            style={styles.content}>
-            {options.map(o => (
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        style={GlobalStyles.container}>
+        <ScrollView style={GlobalStyles.container}>
+          <View style={styles.content}>
+            <MultipleChoiceQuestion
+              text={Strings.whatIsYourGenderIdentity.question}
+              subText={Strings.whatIsYourGenderIdentity.questionSub}
+              style={styles.content}>
+              {options.map(o => (
+                <MultipleChoiceAnswer
+                  key={o.id}
+                  text={o.text}
+                  checked={gender === o.value}
+                  onPress={() => {
+                    setGender(o.value);
+                  }}
+                  editable={!isLoading}
+                />
+              ))}
               <MultipleChoiceAnswer
-                key={o.id}
-                text={o.text}
-                checked={gender === o.value}
+                text={Strings.whatIsYourGenderIdentity.other}
+                // subText={Strings.whatIsYourGenderIdentity.otherSub}
+                checked={gender === 'OT'}
                 onPress={() => {
-                  setGender(o.value);
+                  setGender('OT');
                 }}
                 editable={!isLoading}
               />
-            ))}
-            <MultipleChoiceAnswer
-              text={Strings.whatIsYourGenderIdentity.other}
-              // subText={Strings.whatIsYourGenderIdentity.otherSub}
-              checked={gender === 'OT'}
-              onPress={() => {
-                setGender('OT');
-              }}
-              editable={!isLoading}
-            />
-            {gender === 'OT' && (
-              <Input
-                placeholder={Strings.whatIsYourGenderIdentity.otherSub}
-                onChangeText={newValue => setGenderOther(newValue)}
-                returnKeyType="next"
-                placeholderTextColor="#C3C3C3"
+              {gender === 'OT' && (
+                <Input
+                  placeholder={Strings.whatIsYourGenderIdentity.otherSub}
+                  onChangeText={newValue => setGenderOther(newValue)}
+                  returnKeyType="next"
+                  placeholderTextColor="#C3C3C3"
+                  editable={!isLoading}
+                />
+              )}
+              <MultipleChoiceAnswer
+                text={Strings.whatIsYourGenderIdentity.declineToAnswer}
+                checked={gender === 'DA'}
+                onPress={() => {
+                  setGender('DA');
+                }}
                 editable={!isLoading}
               />
-            )}
-            <MultipleChoiceAnswer
-              text={Strings.whatIsYourGenderIdentity.declineToAnswer}
-              checked={gender === 'DA'}
-              onPress={() => {
-                setGender('DA');
-              }}
-              editable={!isLoading}
-            />
-          </MultipleChoiceQuestion>
-          <View style={styles.content}>
-            <Button
-              style={styles.button}
-              isEnabled={isValid()}
-              onPress={onNextPress}>
-              {Strings.common.next}
-            </Button>
-            <PaginationDots currentPage={4} totalPages={8} />
+            </MultipleChoiceQuestion>
+            <View style={styles.content}>
+              <Button
+                style={styles.button}
+                isEnabled={isValid()}
+                onPress={onNextPress}>
+                {Strings.common.next}
+              </Button>
+              <PaginationDots currentPage={4} totalPages={8} />
+            </View>
           </View>
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </KeyboardAvoidingView>
       <Popup isVisible={showAlert} onClose={() => setShowAlert(false)}>
         <View style={GlobalStyles.centered}>
           <Text style={GlobalStyles.h1}>{alertTitle}</Text>
