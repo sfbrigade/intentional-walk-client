@@ -1,13 +1,6 @@
 import React, {useState} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-  Platform,
-  KeyboardAvoidingView,
-} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {
   Button,
   Input,
@@ -77,9 +70,7 @@ export default function WhatIsSexualOrientationScreen({navigation, route}) {
 
   return (
     <SafeAreaView style={GlobalStyles.container}>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-        style={GlobalStyles.container}>
+      <KeyboardAwareScrollView style={GlobalStyles.container}>
         <ScrollView style={GlobalStyles.container}>
           <View style={styles.content}>
             <MultipleChoiceQuestion
@@ -135,7 +126,7 @@ export default function WhatIsSexualOrientationScreen({navigation, route}) {
             </View>
           </View>
         </ScrollView>
-      </KeyboardAvoidingView>
+      </KeyboardAwareScrollView>
       <Popup isVisible={showAlert} onClose={() => setShowAlert(false)}>
         <View style={GlobalStyles.centered}>
           <Text style={GlobalStyles.h1}>{alertTitle}</Text>
