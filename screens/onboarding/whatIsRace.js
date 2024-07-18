@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, View, ScrollView} from 'react-native';
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {
   Button,
   Input,
@@ -93,57 +94,59 @@ export default function WhatIsRaceScreen({navigation}) {
 
   return (
     <SafeAreaView style={GlobalStyles.container}>
-      <ScrollView style={GlobalStyles.container}>
-        <View style={styles.content}>
-          <MultipleChoiceQuestion
-            text={Strings.whatIsYourRace.question}
-            subText={Strings.whatIsYourRace.questionSub}
-            style={styles.content}>
-            {options.map(o => (
-              <MultipleChoiceAnswer
-                key={o.id}
-                text={o.text}
-                checked={raceID.indexOf(o.id) >= 0}
-                onPress={() => pressCheck(o.id)}
-                editable={!isLoading}
-              />
-            ))}
-            <MultipleChoiceAnswer
-              text={Strings.whatIsYourRace.other}
-              // subText={Strings.whatIsYourRace.otherSub}
-              checked={raceID.indexOf(98) >= 0}
-              onPress={() => pressCheck(98)}
-              editable={!isLoading}
-            />
-            {raceID.indexOf(98) >= 0 && (
-              <Input
-                placeholder={Strings.whatIsYourRace.otherSub}
-                onChangeText={newValue => {
-                  setRaceOther(newValue);
-                }}
-                returnKeyType="next"
-                placeholderTextColor="#C3C3C3"
-                editable={!isLoading}
-              />
-            )}
-            <MultipleChoiceAnswer
-              text={Strings.whatIsYourRace.declineToAnswer}
-              checked={raceID.indexOf(99) >= 0}
-              onPress={() => pressCheck(99)}
-              editable={!isLoading}
-            />
-          </MultipleChoiceQuestion>
+      <KeyboardAwareScrollView style={GlobalStyles.container}>
+        <ScrollView style={GlobalStyles.container}>
           <View style={styles.content}>
-            <Button
-              style={styles.button}
-              isEnabled={isValid()}
-              onPress={onNextPress}>
-              {Strings.common.next}
-            </Button>
-            <PaginationDots currentPage={3} totalPages={8} />
+            <MultipleChoiceQuestion
+              text={Strings.whatIsYourRace.question}
+              subText={Strings.whatIsYourRace.questionSub}
+              style={styles.content}>
+              {options.map(o => (
+                <MultipleChoiceAnswer
+                  key={o.id}
+                  text={o.text}
+                  checked={raceID.indexOf(o.id) >= 0}
+                  onPress={() => pressCheck(o.id)}
+                  editable={!isLoading}
+                />
+              ))}
+              <MultipleChoiceAnswer
+                text={Strings.whatIsYourRace.other}
+                // subText={Strings.whatIsYourRace.otherSub}
+                checked={raceID.indexOf(98) >= 0}
+                onPress={() => pressCheck(98)}
+                editable={!isLoading}
+              />
+              {raceID.indexOf(98) >= 0 && (
+                <Input
+                  placeholder={Strings.whatIsYourRace.otherSub}
+                  onChangeText={newValue => {
+                    setRaceOther(newValue);
+                  }}
+                  returnKeyType="next"
+                  placeholderTextColor="#C3C3C3"
+                  editable={!isLoading}
+                />
+              )}
+              <MultipleChoiceAnswer
+                text={Strings.whatIsYourRace.declineToAnswer}
+                checked={raceID.indexOf(99) >= 0}
+                onPress={() => pressCheck(99)}
+                editable={!isLoading}
+              />
+            </MultipleChoiceQuestion>
+            <View style={styles.content}>
+              <Button
+                style={styles.button}
+                isEnabled={isValid()}
+                onPress={onNextPress}>
+                {Strings.common.next}
+              </Button>
+              <PaginationDots currentPage={3} totalPages={8} />
+            </View>
           </View>
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </KeyboardAwareScrollView>
       <Popup isVisible={showAlert} onClose={() => setShowAlert(false)}>
         <View style={GlobalStyles.centered}>
           <Text style={GlobalStyles.h1}>{alertTitle}</Text>

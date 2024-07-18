@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {
   Button,
   Input,
@@ -69,61 +70,63 @@ export default function WhatIsSexualOrientationScreen({navigation, route}) {
 
   return (
     <SafeAreaView style={GlobalStyles.container}>
-      <ScrollView style={GlobalStyles.container}>
-        <View style={styles.content}>
-          <MultipleChoiceQuestion
-            text={Strings.whatIsYourSexualOrientation.question}
-            subText={Strings.whatIsYourSexualOrientation.questionSub}
-            style={styles.content}>
-            {options.map(o => (
+      <KeyboardAwareScrollView style={GlobalStyles.container}>
+        <ScrollView style={GlobalStyles.container}>
+          <View style={styles.content}>
+            <MultipleChoiceQuestion
+              text={Strings.whatIsYourSexualOrientation.question}
+              subText={Strings.whatIsYourSexualOrientation.questionSub}
+              style={styles.content}>
+              {options.map(o => (
+                <MultipleChoiceAnswer
+                  key={o.id}
+                  text={o.text}
+                  checked={sexualOrientation === o.value}
+                  onPress={() => {
+                    setSexualIOrientation(o.value);
+                  }}
+                  editable={!isLoading}
+                />
+              ))}
               <MultipleChoiceAnswer
-                key={o.id}
-                text={o.text}
-                checked={sexualOrientation === o.value}
+                text={Strings.whatIsYourSexualOrientation.other}
+                // subText={Strings.whatIsYourSexualOrientation.otherSub}
+                checked={sexualOrientation === 'OT'}
                 onPress={() => {
-                  setSexualIOrientation(o.value);
+                  setSexualIOrientation('OT');
                 }}
                 editable={!isLoading}
               />
-            ))}
-            <MultipleChoiceAnswer
-              text={Strings.whatIsYourSexualOrientation.other}
-              // subText={Strings.whatIsYourSexualOrientation.otherSub}
-              checked={sexualOrientation === 'OT'}
-              onPress={() => {
-                setSexualIOrientation('OT');
-              }}
-              editable={!isLoading}
-            />
-            {sexualOrientation === 'OT' && (
-              <Input
-                placeholder={Strings.whatIsYourSexualOrientation.otherSub}
-                onChangeText={newValue => setSexualOrientationOther(newValue)}
-                returnKeyType="next"
-                placeholderTextColor="#C3C3C3"
+              {sexualOrientation === 'OT' && (
+                <Input
+                  placeholder={Strings.whatIsYourSexualOrientation.otherSub}
+                  onChangeText={newValue => setSexualOrientationOther(newValue)}
+                  returnKeyType="next"
+                  placeholderTextColor="#C3C3C3"
+                  editable={!isLoading}
+                />
+              )}
+              <MultipleChoiceAnswer
+                text={Strings.whatIsYourSexualOrientation.declineToAnswer}
+                checked={sexualOrientation === 'DA'}
+                onPress={() => {
+                  setSexualIOrientation('DA');
+                }}
                 editable={!isLoading}
               />
-            )}
-            <MultipleChoiceAnswer
-              text={Strings.whatIsYourSexualOrientation.declineToAnswer}
-              checked={sexualOrientation === 'DA'}
-              onPress={() => {
-                setSexualIOrientation('DA');
-              }}
-              editable={!isLoading}
-            />
-          </MultipleChoiceQuestion>
-          <View style={styles.content}>
-            <Button
-              style={styles.button}
-              isEnabled={isValid()}
-              onPress={onNextPress}>
-              {Strings.common.submit}
-            </Button>
-            <PaginationDots currentPage={5} totalPages={8} />
+            </MultipleChoiceQuestion>
+            <View style={styles.content}>
+              <Button
+                style={styles.button}
+                isEnabled={isValid()}
+                onPress={onNextPress}>
+                {Strings.common.submit}
+              </Button>
+              <PaginationDots currentPage={5} totalPages={8} />
+            </View>
           </View>
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </KeyboardAwareScrollView>
       <Popup isVisible={showAlert} onClose={() => setShowAlert(false)}>
         <View style={GlobalStyles.centered}>
           <Text style={GlobalStyles.h1}>{alertTitle}</Text>
