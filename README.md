@@ -4,7 +4,10 @@ This is the new Intentional Walk iOS and Android client app codebase.
 
 # Getting Started
 
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Set up Your Environment](https://reactnative.dev/docs/set-up-your-environment) instructions before proceeding. To install Node, you can also consider using a Node Version Manager to be able to switch between versions for different projects:
+>
+> macOS & Linux: https://github.com/nvm-sh/nvm  
+> Windows: https://github.com/coreybutler/nvm-windows
 
 ## Setting up an environment
 
