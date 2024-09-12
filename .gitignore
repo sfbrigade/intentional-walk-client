@@ -71,3 +71,7 @@ yarn-error.log
 
 # testing
 /coverage
+
+#Sentry
+android/sentry.properties
+ios/sentry.properties

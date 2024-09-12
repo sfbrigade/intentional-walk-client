@@ -14,6 +14,7 @@
     "@react-native-masked-view/masked-view": "^0.3.1",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.20",
+    "@sentry/react-native": "^5.31.1",
     "@sfcivictech/react-native-cm-pedometer": "^1.0.0",
     "axios": "^1.6.5",
     "lodash": "^4.17.21",

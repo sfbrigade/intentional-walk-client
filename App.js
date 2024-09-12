@@ -11,6 +11,14 @@ import {Strings} from './lib';
 import moment from 'moment';
 import 'moment/locale/es';
 import 'moment/locale/zh-cn';
+import * as Sentry from '@sentry/react-native';
+
+Sentry.init({
+  dsn: 'https://82c136a8209d345cd67d1d52dca576a7@o4507340843384832.ingest.us.sentry.io/4507858393366528',
+
+  // uncomment the line below to enable Spotlight (https://spotlightjs.com)
+  // enableSpotlight: __DEV__,
+});
 moment.locale(Strings.getLanguage());
 
 /// https://github.com/facebook/react-native/issues/15114
