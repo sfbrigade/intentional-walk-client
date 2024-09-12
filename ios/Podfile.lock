@@ -1144,8 +1144,16 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
+  - RNSentry (5.31.1):
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+    - React-hermes
+    - Sentry/HybridSDK (= 8.36.0)
   - RNSVG (14.1.0):
     - React-Core
+  - Sentry/HybridSDK (8.36.0)
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
 
@@ -1234,6 +1242,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - "RNNotifee (from `../node_modules/@notifee/react-native`)"
   - RNScreens (from `../node_modules/react-native-screens`)
+  - "RNSentry (from `../node_modules/@sentry/react-native`)"
   - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -1251,6 +1260,7 @@ SPEC REPOS:
     - fmt
     - libevent
     - OpenSSL-Universal
+    - Sentry
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1373,6 +1383,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@notifee/react-native"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSentry:
+    :path: "../node_modules/@sentry/react-native"
   RNSVG:
     :path: "../node_modules/react-native-svg"
   Yoga:
@@ -1393,11 +1405,11 @@ SPEC CHECKSUMS:
   Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
   FlipperKit: 37525a5d056ef9b93d1578e04bc3ea1de940094f
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
-  glog: 79d13cd7c34b5d0cea5f4ca72c0e6b462ef8fb4d
+  glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
   hermes-engine: b12d9bb1b7cee546f5e48212e7ea7e3c1665a367
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  RCT-Folly: 082c31bb88ae3582d685f8923b9938147be587b3
+  RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: 0c7f03a41ee32dec802c74c341e317a4165973d5
   RCTTypeSafety: 57698bb7fcde424922e201dab377f496a08a63e3
   React: 64c0c83924460a3d34fa5857ca2fd3ed2a69b581
@@ -1450,10 +1462,12 @@ SPEC CHECKSUMS:
   RNGestureHandler: 15c6ef51acba34c49ff03003806cf5dd6098f383
   RNNotifee: 8e2d3df3f0e9ce8f5d1fe4c967431138190b6175
   RNScreens: 17e2f657f1b09a71ec3c821368a04acbb7ebcb46
+  RNSentry: e244f62ec77e716d295c60c56939300b01a7c56f
   RNSVG: ba3e7232f45e34b7b47e74472386cf4e1a676d0a
+  Sentry: f8374b5415bc38dfb5645941b3ae31230fbeae57
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: e5b887426cee15d2a326bdd34afc0282fc0486ad
 
 PODFILE CHECKSUM: 115f22d3e0c8a0469c48a486868669ff437efbfd
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
