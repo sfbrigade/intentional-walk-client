@@ -47,7 +47,7 @@ export default function PartnersScreen({navigation}) {
           <View style={styles.separator} />
           <Image
             style={[styles.logo, {width}]}
-            source={require('../../assets/c4sf_logo.png')}
+            source={require('../../assets/sfcivictech_logo.png')}
           />
         </View>
         <View style={styles.row}>
