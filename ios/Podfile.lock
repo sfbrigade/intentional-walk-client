@@ -948,9 +948,9 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
-  - react-native-get-random-values (1.10.0):
+  - react-native-get-random-values (1.11.0):
     - React-Core
-  - react-native-safe-area-context (4.8.2):
+  - react-native-safe-area-context (4.14.1):
     - React-Core
   - React-nativeconfig (0.73.8)
   - React-NativeModulesApple (0.73.8):
@@ -1121,39 +1121,42 @@ PODS:
     - React-perflogger (= 0.73.8)
   - ReactNativeLocalization (2.3.2):
     - React-Core
-  - RealmJS (12.5.1):
+  - RealmJS (12.14.0):
     - React
   - RNAppleHealthKit (1.7.0):
     - React
-  - RNBootSplash (5.2.2):
+  - RNBootSplash (5.5.3):
     - React-Core
-  - RNCMaskedView (0.3.1):
-    - React-Core
-  - RNDeviceInfo (10.12.0):
-    - React-Core
-  - RNGestureHandler (2.14.1):
+  - RNCMaskedView (0.3.2):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
-  - RNNotifee (7.8.2):
+  - RNDeviceInfo (10.14.0):
     - React-Core
-    - RNNotifee/NotifeeCore (= 7.8.2)
-  - RNNotifee/NotifeeCore (7.8.2):
-    - React-Core
-  - RNScreens (3.29.0):
+  - RNGestureHandler (2.21.2):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
-  - RNSentry (5.31.1):
+  - RNNotifee (7.9.0):
+    - React-Core
+    - RNNotifee/NotifeeCore (= 7.9.0)
+  - RNNotifee/NotifeeCore (7.9.0):
+    - React-Core
+  - RNScreens (3.35.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+    - React-RCTImage
+  - RNSentry (5.36.0):
     - glog
     - hermes-engine
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
     - React-hermes
-    - Sentry/HybridSDK (= 8.36.0)
-  - RNSVG (14.1.0):
+    - Sentry/HybridSDK (= 8.41.0)
+  - RNSVG (14.2.0):
     - React-Core
-  - Sentry/HybridSDK (8.36.0)
+  - Sentry/HybridSDK (8.41.0)
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
 
@@ -1431,8 +1434,8 @@ SPEC CHECKSUMS:
   React-logger: 60afd40b183e8e6642bfd0108f1a1ad360cc665e
   React-Mapbuffer: 672a9342eb75a4d0663306e94d4dfc88aee73b93
   react-native-cm-pedometer: cfa4363e09b1f2578c72730ba46375521a02fe70
-  react-native-get-random-values: 384787fd76976f5aec9465aff6fa9e9129af1e74
-  react-native-safe-area-context: 0ee144a6170530ccc37a0fd9388e28d06f516a89
+  react-native-get-random-values: 21325b2244dfa6b58878f51f9aa42821e7ba3d06
+  react-native-safe-area-context: 141eca0fd4e4191288dfc8b96a7c7e1c2983447a
   React-nativeconfig: 2e44d0d2dd222b12a5183f4bcaa4a91881497acb
   React-NativeModulesApple: 8aa032fe6c92c1a3c63e4809d42816284a56a9b0
   React-perflogger: f9367428cf475f4606b5965c1d5a71781bb95299
@@ -1454,19 +1457,19 @@ SPEC CHECKSUMS:
   React-utils: 4cc2ba652f5df1c8f0461d4ae9e3ee474c1354ea
   ReactCommon: 1da3fc14d904883c46327b3322325eebf60a720a
   ReactNativeLocalization: fb171138cdc80d5d0d4f20243d2fc82c2b3cc48f
-  RealmJS: 5af7e3b3c1b6de6a1f9bd62bfbf4caca749fa708
+  RealmJS: 054540707292206eadf069f110e79defb632a1b3
   RNAppleHealthKit: 60a6beefdd89a75811e9a8873a5e24f351dee681
-  RNBootSplash: 6890a69d909d76076aaba018bd74bb526f82fe68
-  RNCMaskedView: 090213d32d8b3bb83a4dcb7d12c18f0152591906
-  RNDeviceInfo: db5c64a060e66e5db3102d041ebe3ef307a85120
-  RNGestureHandler: 15c6ef51acba34c49ff03003806cf5dd6098f383
-  RNNotifee: 8e2d3df3f0e9ce8f5d1fe4c967431138190b6175
-  RNScreens: 17e2f657f1b09a71ec3c821368a04acbb7ebcb46
-  RNSentry: e244f62ec77e716d295c60c56939300b01a7c56f
-  RNSVG: ba3e7232f45e34b7b47e74472386cf4e1a676d0a
-  Sentry: f8374b5415bc38dfb5645941b3ae31230fbeae57
+  RNBootSplash: e025d4ee98d942ee6c8b495a6fe66339a6b5f6dd
+  RNCMaskedView: c8e1f01fc0f41ddf4e16246aef1143b3311588ca
+  RNDeviceInfo: 59344c19152c4b2b32283005f9737c5c64b42fba
+  RNGestureHandler: 57144b74a3402b21180df3ec7b3a0266ddf89548
+  RNNotifee: 935f3ea8c134c88cbf8b13ea0c97c72c09ad2116
+  RNScreens: 69850d4519d95b9359cec15a67bb5f9d0bd75262
+  RNSentry: 0e0375b68ae5d72f09b61f5ef9228f23d670ce36
+  RNSVG: 963a95f1f5d512a13d11ffd50d351c87fb5c6890
+  Sentry: 54d0fe6c0df448497c8ed4cce66ccf7027e1823e
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  Yoga: e5b887426cee15d2a326bdd34afc0282fc0486ad
+  Yoga: 2a16e58450c48e110211dae1159fb114bbcdcfc0
 
 PODFILE CHECKSUM: 115f22d3e0c8a0469c48a486868669ff437efbfd
 

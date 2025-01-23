@@ -1,10 +1,10 @@
 致Intentional Walk應用程式使用者：
 
-感謝您參加三藩市公共衛生局 (San Francisco Department of Public Health, SFDPH) 和加州公共衛生局 (California Department of Public Health, CDPH) 共同開展的 Intentional Walk計劃（意為「有意圖的行走計劃」，下稱「計劃」）並使用 Intentional Walk應用程式（下稱「應用程式」）。我們想告知您，參與計劃即表示您同意SFDPH/CDPH和Code for San Francisco獲取以下資料：比賽期間和比賽開始日期前30天內的被動步數（未記錄的步數）、主動步數（已記錄的步數）、總步數和已記錄的步行距離，以及使用者的姓名、電子郵箱、年齡、居住地郵遞區號、種族、性取向和性別認同。當您解除安裝應用程式和/或計劃結束後，我們將不再收集其他數據。為保護您的個人資訊，SFDPH/CDPH遵守以下規則和條例：
+感謝您參加三藩市公共衛生局 (San Francisco Department of Public Health, SFDPH) 和加州公共衛生局 (California Department of Public Health, CDPH) 共同開展的 Intentional Walk計劃（意為「有意圖的行走計劃」，下稱「計劃」）並使用 Intentional Walk應用程式（下稱「應用程式」）。我們想告知您，參與計劃即表示您同意SFDPH/CDPH和SF Civic Tech獲取以下資料：比賽期間和比賽開始日期前30天內的被動步數（未記錄的步數）、主動步數（已記錄的步數）、總步數和已記錄的步行距離，以及使用者的姓名、電子郵箱、年齡、居住地郵遞區號、種族、性取向和性別認同。當您解除安裝應用程式和/或計劃結束後，我們將不再收集其他數據。為保護您的個人資訊，SFDPH/CDPH遵守以下規則和條例：
 
 1. 僅可透過本文中披露的合法手段取得個人識別資訊。
 
-2. 除非徵得使用者同意或法律法規要求，否則SFDPH/CDPH和 Code for San Francisco不得以規定以外之任何目的或理由（包括第三方）提供、出售或使用個人資料。
+2. 除非徵得使用者同意或法律法規要求，否則SFDPH/CDPH和 SF Civic Tech不得以規定以外之任何目的或理由（包括第三方）提供、出售或使用個人資料。
 
 3. 根據《公共檔案法》，不得請求取得以電子方式收集的個人資訊。
 
