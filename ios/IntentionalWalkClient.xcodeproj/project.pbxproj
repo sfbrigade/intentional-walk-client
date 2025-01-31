@@ -505,7 +505,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = IntentionalWalkClient/IntentionalWalkClient.entitlements;
 				CURRENT_PROJECT_VERSION = 49;
-				DEVELOPMENT_TEAM = 2XU846A9M4;
+				DEVELOPMENT_TEAM = PXX6Y4HT3J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IntentionalWalkClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,7 +534,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = IntentionalWalkClient/IntentionalWalkClient.entitlements;
 				CURRENT_PROJECT_VERSION = 49;
-				DEVELOPMENT_TEAM = 2XU846A9M4;
+				DEVELOPMENT_TEAM = PXX6Y4HT3J;
 				INFOPLIST_FILE = IntentionalWalkClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
