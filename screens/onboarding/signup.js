@@ -67,9 +67,12 @@ export default function SignUpScreen({navigation, route}) {
         }
         return false;
       }
-      BackHandler.addEventListener('hardwareBackPress', onBackPress);
-      return () =>
-        BackHandler.removeEventListener('hardwareBackPress', onBackPress);
+      const backHandler = BackHandler.addEventListener(
+        'hardwareBackPress',
+        onBackPress,
+      );
+
+      return backHandler.remove();
     }, [showAlert, showPrivacyPolicy, showContestRules]),
   );
 
