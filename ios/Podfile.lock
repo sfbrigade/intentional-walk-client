@@ -1530,7 +1530,7 @@ PODS:
     - React
   - RNAppleHealthKit (1.7.0):
     - React
-  - RNBootSplash (5.5.3):
+  - RNBootSplash (6.3.3):
     - React-Core
   - RNCMaskedView (0.3.2):
     - DoubleConversion
@@ -1956,7 +1956,7 @@ SPEC CHECKSUMS:
   ReactNativeLocalization: 79b100588f6d7a68852b982ccbe57e329e8bb5a7
   RealmJS: 52de9501855cc87c23b91a5ef27e91f3824857da
   RNAppleHealthKit: 86ef7ab70f762b802f5c5289372de360cca701f9
-  RNBootSplash: 2fc215ec70ab24408745e9452fa3e6595fb9ce76
+  RNBootSplash: 2a9d2de139a6f8a84a0f1728ac40f3e7b167e15a
   RNCMaskedView: 2a1adda250c1b71134fa097ae7fc56e0b41ca01e
   RNDeviceInfo: 801c18d0525e86580900e7b5f562dca0c8c05021
   RNGestureHandler: 6d231bf41166c01b8234f0b7b24d73d82e44ef4c

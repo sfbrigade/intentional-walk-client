@@ -14,9 +14,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		455033CA2B116DF800966531 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 455033B72B116DF800966531 /* MaterialIcons.ttf */; };
 		455033CD2B140BD100966531 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455033CC2B140BD100966531 /* CoreMotion.framework */; };
-		457E87952B5DD08F00B73214 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457E87942B5DD08F00B73214 /* BootSplash.storyboard */; };
+		8763620B1A13461DA39E2995 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319F3A3FCC274A99959B8285 /* BootSplash.storyboard */; };
 		BC23F36E8155F30C29916DA3 /* libPods-IntentionalWalkClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8A2E5EA064118A16EA92D /* libPods-IntentionalWalkClient.a */; };
 		E02DEF1B389FF6576CC513E9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 471BF60AF23453ED59C9D928 /* PrivacyInfo.xcprivacy */; };
+		E1AB791684A84AB0A93995B5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818F890A11F245FEBF1487D7 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +41,15 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IntentionalWalkClient/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IntentionalWalkClient/main.m; sourceTree = "<group>"; };
 		2EEC5725846D8A7511776BD1 /* Pods-IntentionalWalkClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.debug.xcconfig"; sourceTree = "<group>"; };
+		319F3A3FCC274A99959B8285 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.storyboard; path = BootSplash.storyboard; sourceTree = "<group>"; };
 		455033B72B116DF800966531 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		455033CB2B127B8F00966531 /* IntentionalWalkClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = IntentionalWalkClient.entitlements; path = IntentionalWalkClient/IntentionalWalkClient.entitlements; sourceTree = "<group>"; };
 		455033CC2B140BD100966531 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		457E87942B5DD08F00B73214 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = IntentionalWalkClient/BootSplash.storyboard; sourceTree = "<group>"; };
 		471BF60AF23453ED59C9D928 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = IntentionalWalkClient/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5D0ADFAC12ECB5ABA2F4C34F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntentionalWalkClient-IntentionalWalkClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB8A2E5EA064118A16EA92D /* libPods-IntentionalWalkClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntentionalWalkClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713179817B9B485EFC21EC2D /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		818F890A11F245FEBF1487D7 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = IntentionalWalkClient/Colors.xcassets; sourceTree = "<group>"; };
 		8D34F1FDB1835D8BF7E42F4A /* Pods-IntentionalWalkClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.release.xcconfig"; sourceTree = "<group>"; };
 		E84F2CC89B53464D95BA3D01 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -97,11 +99,12 @@
 				455033A42B116DF800966531 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
-				457E87942B5DD08F00B73214 /* BootSplash.storyboard */,
+				438AF6002D519B8E00C07DB2 /* Base.lproj */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				471BF60AF23453ED59C9D928 /* PrivacyInfo.xcprivacy */,
+				818F890A11F245FEBF1487D7 /* Colors.xcassets */,
 			);
 			name = IntentionalWalkClient;
 			sourceTree = "<group>";
@@ -115,6 +118,15 @@
 				5D0ADFAC12ECB5ABA2F4C34F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438AF6002D519B8E00C07DB2 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				319F3A3FCC274A99959B8285 /* BootSplash.storyboard */,
+			);
+			name = Base.lproj;
+			path = IntentionalWalkClient/Base.lproj;
 			sourceTree = "<group>";
 		};
 		455033A42B116DF800966531 /* Fonts */ = {
@@ -265,8 +277,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				455033CA2B116DF800966531 /* MaterialIcons.ttf in Resources */,
-				457E87952B5DD08F00B73214 /* BootSplash.storyboard in Resources */,
 				E02DEF1B389FF6576CC513E9 /* PrivacyInfo.xcprivacy in Resources */,
+				8763620B1A13461DA39E2995 /* BootSplash.storyboard in Resources */,
+				E1AB791684A84AB0A93995B5 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
