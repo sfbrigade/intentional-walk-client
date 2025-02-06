@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* IntentionalWalkClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* IntentionalWalkClientTests.m */; };
+		11C9F0AF7FC7555D2B89507A /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0ADFAC12ECB5ABA2F4C34F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		415AA5F28679B895EA80050C /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1277765445862776C603EC0F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */; };
 		455033CA2B116DF800966531 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 455033B72B116DF800966531 /* MaterialIcons.ttf */; };
 		455033CD2B140BD100966531 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455033CC2B140BD100966531 /* CoreMotion.framework */; };
-		457E87952B5DD08F00B73214 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457E87942B5DD08F00B73214 /* BootSplash.storyboard */; };
-		4D6F6DE0B5D19EA0B7761E55 /* libPods-IntentionalWalkClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B9B3113CCEC12AE6B89B8B /* libPods-IntentionalWalkClient.a */; };
+		8763620B1A13461DA39E2995 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319F3A3FCC274A99959B8285 /* BootSplash.storyboard */; };
+		BC23F36E8155F30C29916DA3 /* libPods-IntentionalWalkClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8A2E5EA064118A16EA92D /* libPods-IntentionalWalkClient.a */; };
+		E02DEF1B389FF6576CC513E9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 471BF60AF23453ED59C9D928 /* PrivacyInfo.xcprivacy */; };
+		E1AB791684A84AB0A93995B5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818F890A11F245FEBF1487D7 /* Colors.xcassets */; };
+		7BE3A5EE9E3C49F9A1BF85E9 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5479CAEFD3D44F6A35135DB /* BootSplash.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,27 +35,26 @@
 		00E356EE1AD99517003FC87E /* IntentionalWalkClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntentionalWalkClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* IntentionalWalkClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentionalWalkClientTests.m; sourceTree = "<group>"; };
-		1277765445862776C603EC0F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntentionalWalkClient-IntentionalWalkClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* IntentionalWalkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntentionalWalkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IntentionalWalkClient/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = IntentionalWalkClient/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IntentionalWalkClient/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IntentionalWalkClient/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IntentionalWalkClient/main.m; sourceTree = "<group>"; };
-		18B9B3113CCEC12AE6B89B8B /* libPods-IntentionalWalkClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntentionalWalkClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-IntentionalWalkClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.debug.xcconfig"; sourceTree = "<group>"; };
+		2EEC5725846D8A7511776BD1 /* Pods-IntentionalWalkClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.debug.xcconfig"; sourceTree = "<group>"; };
+		319F3A3FCC274A99959B8285 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.storyboard; path = BootSplash.storyboard; sourceTree = "<group>"; };
 		455033B72B116DF800966531 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		455033CB2B127B8F00966531 /* IntentionalWalkClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = IntentionalWalkClient.entitlements; path = IntentionalWalkClient/IntentionalWalkClient.entitlements; sourceTree = "<group>"; };
 		455033CC2B140BD100966531 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		457E87942B5DD08F00B73214 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = IntentionalWalkClient/BootSplash.storyboard; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-IntentionalWalkClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7DEDE10DA0B2EB46984BE3B0 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; sourceTree = "<group>"; };
-		E5C6930BCAB96342E41BB32D /* Pods-IntentionalWalkClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.release.xcconfig"; sourceTree = "<group>"; };
-		E73E73593C5EBCFD26992167 /* Pods-IntentionalWalkClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.debug.xcconfig"; sourceTree = "<group>"; };
+		471BF60AF23453ED59C9D928 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = IntentionalWalkClient/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5D0ADFAC12ECB5ABA2F4C34F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntentionalWalkClient-IntentionalWalkClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB8A2E5EA064118A16EA92D /* libPods-IntentionalWalkClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntentionalWalkClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		713179817B9B485EFC21EC2D /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		818F890A11F245FEBF1487D7 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = IntentionalWalkClient/Colors.xcassets; sourceTree = "<group>"; };
+		8D34F1FDB1835D8BF7E42F4A /* Pods-IntentionalWalkClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.release.xcconfig"; sourceTree = "<group>"; };
+		E84F2CC89B53464D95BA3D01 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F6093F7FB30B9DA341032CC2 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5479CAEFD3D44F6A35135DB /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "IntentionalWalkClient/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				415AA5F28679B895EA80050C /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a in Frameworks */,
+				11C9F0AF7FC7555D2B89507A /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				455033CD2B140BD100966531 /* CoreMotion.framework in Frameworks */,
-				4D6F6DE0B5D19EA0B7761E55 /* libPods-IntentionalWalkClient.a in Frameworks */,
+				BC23F36E8155F30C29916DA3 /* libPods-IntentionalWalkClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +101,13 @@
 				455033A42B116DF800966531 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
-				457E87942B5DD08F00B73214 /* BootSplash.storyboard */,
+				438AF6002D519B8E00C07DB2 /* Base.lproj */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				471BF60AF23453ED59C9D928 /* PrivacyInfo.xcprivacy */,
+				818F890A11F245FEBF1487D7 /* Colors.xcassets */,
+				A5479CAEFD3D44F6A35135DB /* BootSplash.storyboard */,
 			);
 			name = IntentionalWalkClient;
 			sourceTree = "<group>";
@@ -112,10 +117,19 @@
 			children = (
 				455033CC2B140BD100966531 /* CoreMotion.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				18B9B3113CCEC12AE6B89B8B /* libPods-IntentionalWalkClient.a */,
-				1277765445862776C603EC0F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */,
+				6AB8A2E5EA064118A16EA92D /* libPods-IntentionalWalkClient.a */,
+				5D0ADFAC12ECB5ABA2F4C34F /* libPods-IntentionalWalkClient-IntentionalWalkClientTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438AF6002D519B8E00C07DB2 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				319F3A3FCC274A99959B8285 /* BootSplash.storyboard */,
+			);
+			name = Base.lproj;
+			path = IntentionalWalkClient/Base.lproj;
 			sourceTree = "<group>";
 		};
 		455033A42B116DF800966531 /* Fonts */ = {
@@ -162,14 +176,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-IntentionalWalkClient.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-IntentionalWalkClient.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */,
-				E73E73593C5EBCFD26992167 /* Pods-IntentionalWalkClient.debug.xcconfig */,
-				E5C6930BCAB96342E41BB32D /* Pods-IntentionalWalkClient.release.xcconfig */,
-				7DEDE10DA0B2EB46984BE3B0 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */,
-				F6093F7FB30B9DA341032CC2 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */,
+				2EEC5725846D8A7511776BD1 /* Pods-IntentionalWalkClient.debug.xcconfig */,
+				8D34F1FDB1835D8BF7E42F4A /* Pods-IntentionalWalkClient.release.xcconfig */,
+				E84F2CC89B53464D95BA3D01 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */,
+				713179817B9B485EFC21EC2D /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -181,12 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "IntentionalWalkClientTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				C6C67961AF90739B5760755A /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				786AFE24BAAC23FBB3F14C9D /* [CP] Embed Pods Frameworks */,
+				5D3A28A6775EC9FF8165744C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,14 +212,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "IntentionalWalkClient" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				BA94E4C2D8746DA7C798EDFB /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 				4B7FE333BE0146A3AF1431A7 /* Upload Debug Symbols to Sentry */,
+				73829198967AAFB0C1CB47FA /* [CP] Embed Pods Frameworks */,
+				AAE505A2DF1B338E2B0C57EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,7 +280,10 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				455033CA2B116DF800966531 /* MaterialIcons.ttf in Resources */,
-				457E87952B5DD08F00B73214 /* BootSplash.storyboard in Resources */,
+				E02DEF1B389FF6576CC513E9 /* PrivacyInfo.xcprivacy in Resources */,
+				8763620B1A13461DA39E2995 /* BootSplash.storyboard in Resources */,
+				E1AB791684A84AB0A93995B5 /* Colors.xcassets in Resources */,
+				7BE3A5EE9E3C49F9A1BF85E9 /* BootSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +306,38 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT \\\"/bin/sh ../node_modules/@sentry/react-native/scripts/sentry-xcode.sh $REACT_NATIVE_XCODE\\\"\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		4B7FE333BE0146A3AF1431A7 /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Upload Debug Symbols to Sentry";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh ../node_modules/@sentry/react-native/scripts/sentry-xcode-debug-files.sh";
+		};
+		5D3A28A6775EC9FF8165744C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73829198967AAFB0C1CB47FA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,43 +354,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4B7FE333BE0146A3AF1431A7 /* Upload Debug Symbols to Sentry */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Upload Debug Symbols to Sentry";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/bin/sh ../node_modules/@sentry/react-native/scripts/sentry-xcode-debug-files.sh";
-		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		786AFE24BAAC23FBB3F14C9D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IntentionalWalkClient-IntentionalWalkClientTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		AAE505A2DF1B338E2B0C57EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA94E4C2D8746DA7C798EDFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,55 +410,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		C6C67961AF90739B5760755A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntentionalWalkClient-IntentionalWalkClientTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,7 +465,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DEDE10DA0B2EB46984BE3B0 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */;
+			baseConfigurationReference = E84F2CC89B53464D95BA3D01 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -479,7 +492,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6093F7FB30B9DA341032CC2 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */;
+			baseConfigurationReference = 713179817B9B485EFC21EC2D /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -503,13 +516,13 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E73E73593C5EBCFD26992167 /* Pods-IntentionalWalkClient.debug.xcconfig */;
+			baseConfigurationReference = 2EEC5725846D8A7511776BD1 /* Pods-IntentionalWalkClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = IntentionalWalkClient/IntentionalWalkClient.entitlements;
 				CURRENT_PROJECT_VERSION = 49;
-				DEVELOPMENT_TEAM = 2XU846A9M4;
+				DEVELOPMENT_TEAM = PXX6Y4HT3J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IntentionalWalkClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,13 +545,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5C6930BCAB96342E41BB32D /* Pods-IntentionalWalkClient.release.xcconfig */;
+			baseConfigurationReference = 8D34F1FDB1835D8BF7E42F4A /* Pods-IntentionalWalkClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = IntentionalWalkClient/IntentionalWalkClient.entitlements;
 				CURRENT_PROJECT_VERSION = 49;
-				DEVELOPMENT_TEAM = 2XU846A9M4;
+				DEVELOPMENT_TEAM = PXX6Y4HT3J;
 				INFOPLIST_FILE = IntentionalWalkClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -607,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -630,6 +643,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				USE_HERMES = true;
 			};
 			name = Debug;
@@ -680,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
