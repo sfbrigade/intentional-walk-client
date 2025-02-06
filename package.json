@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "bootsplash:generate": "react-native-bootsplash generate assets/logo_full.png --project-type=bare --platforms=android,ios --background=702B80 --logo-width 250; rm -Rf assets/bootsplash"
   },
   "dependencies": {
     "@notifee/react-native": "^9.1.8",
