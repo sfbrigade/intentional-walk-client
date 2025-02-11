@@ -22,30 +22,39 @@ first and/or last name "Tester" to have your account flagged as a test account o
 If you change your environment settings, you'll need to reset the Metro Bundler cache. Close it, if
 it is running, then restart it with: `npm start -- --reset-cache`
 
-## Step 1: Start the Metro Server
+## Step 1: Start Metro
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+To start the Metro dev server, run the following command from the root of your React Native project:
 
-```bash
+```sh
 # Using npm
 npm start
+
+# OR using Yarn
+yarn start
 ```
 
 ## Step 2: Build and run your app
 
+## Step 2: Build and run your app
+
 With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+
+### Android
 
 ### Android
 
 ```sh
 # Using npm
 npm run android
-
-# OR using Yarn
-yarn android
 ```
+
+For Android, it should launch the emulator running in a configured Android Virtual Device. If not,
+launch Android Studio, go to "More actions...", "Virtual Device Manager", and press the triangle
+Play button next to a listed emulator. Note that the installation may fail if the device is still booting- if so, wait for the emulator to fully boot to the lock/home screen, and run the command again.
 
 ### iOS
 
@@ -68,9 +77,19 @@ For more information, please visit [CocoaPods Getting Started guide](https://gui
 ```sh
 # Using npm
 npm run ios
+```
 
-# OR using Yarn
-yarn ios
+To specify a specific simulator iOS device:
+
+```sh
+# using npm
+npm run ios -- --simulator="iPhone 15"
+```
+
+To view a list of simulators installed on your computer:
+
+```sh
+xcrun simctl list
 ```
 
 If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
@@ -123,7 +142,7 @@ Contact another developer or admin on this project and:
 
 # Troubleshooting
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
 # Learn More
 
