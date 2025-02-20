@@ -44,7 +44,7 @@ function App() {
       <NavigationContainer
         ref={navigationRef}
         onStateChange={state => onStateChange(state)}>
-        <RootStack.Navigator screenOptions={{presentation: 'modal'}}>
+        <RootStack.Navigator>
           <RootStack.Screen
             name="MainStack"
             component={MainStack}
@@ -53,7 +53,11 @@ function App() {
           <RootStack.Screen
             name="OnboardingStack"
             component={OnboardingStack}
-            options={{headerShown: false, gestureEnabled: false}}
+            options={{
+              headerShown: false,
+              gestureEnabled: false,
+              presentation: 'modal',
+            }}
           />
         </RootStack.Navigator>
       </NavigationContainer>
