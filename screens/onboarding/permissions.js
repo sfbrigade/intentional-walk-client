@@ -18,10 +18,8 @@ export default function InfoScreen({navigation}) {
     Fitness.requestPermissions()
       .then(permitted => {
         if (permitted) {
-          navigation.navigate('MainStack', {
-            screen: 'Home',
-            params: {refresh: true},
-          });
+          navigation.popToTop();
+          navigation.goBack();
         }
       })
       .catch(err => console.log(err));
