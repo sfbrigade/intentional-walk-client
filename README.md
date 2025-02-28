@@ -4,7 +4,10 @@ This is the new Intentional Walk iOS and Android client app codebase.
 
 # Getting Started
 
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Set up Your Environment](https://reactnative.dev/docs/set-up-your-environment) instructions before proceeding. To install Node, you can also consider using a Node Version Manager to be able to switch between versions for different projects:
+>
+> macOS & Linux: https://github.com/nvm-sh/nvm  
+> Windows: https://github.com/coreybutler/nvm-windows
 
 ## Setting up an environment
 
@@ -19,15 +22,18 @@ first and/or last name "Tester" to have your account flagged as a test account o
 If you change your environment settings, you'll need to reset the Metro Bundler cache. Close it, if
 it is running, then restart it with: `npm start -- --reset-cache`
 
-## Step 1: Start the Metro Server
+## Step 1: Start Metro
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+To start the Metro dev server, run the following command from the root of your React Native project:
 
-```bash
+```sh
 # Using npm
 npm start
+
+# OR using Yarn
+yarn start
 ```
 
 ## Step 2: Build and run your app
@@ -39,10 +45,11 @@ With Metro running, open a new terminal window/pane from the root of your React 
 ```sh
 # Using npm
 npm run android
-
-# OR using Yarn
-yarn android
 ```
+
+For Android, it should launch the emulator running in a configured Android Virtual Device. If not,
+launch Android Studio, go to "More actions...", "Virtual Device Manager", and press the triangle
+Play button next to a listed emulator. Note that the installation may fail if the device is still booting- if so, wait for the emulator to fully boot to the lock/home screen, and run the command again.
 
 ### iOS
 
@@ -65,9 +72,19 @@ For more information, please visit [CocoaPods Getting Started guide](https://gui
 ```sh
 # Using npm
 npm run ios
+```
 
-# OR using Yarn
-yarn ios
+To specify a specific simulator iOS device:
+
+```sh
+# using npm
+npm run ios -- --simulator="iPhone 15"
+```
+
+To view a list of simulators installed on your computer:
+
+```sh
+xcrun simctl list
 ```
 
 If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
@@ -78,7 +95,7 @@ This is one way to run your app — you can also build it directly from Android 
 
 Now that you have successfully run the app, let's make changes!
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+Open `App.js` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
 
 When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
 
@@ -120,7 +137,7 @@ Contact another developer or admin on this project and:
 
 # Troubleshooting
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
 # Learn More
 
