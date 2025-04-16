@@ -1,6 +1,6 @@
 {
   "name": "intentional-walk-client",
-  "version": "3.0.4",
+  "version": "4.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
