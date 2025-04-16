@@ -1,6 +1,6 @@
-# Intentional Walk
+# Let's Walk
 
-This is the new Intentional Walk iOS and Android client app codebase.
+This is the new Let's Walk iOS and Android client app codebase.
 
 # Getting Started
 

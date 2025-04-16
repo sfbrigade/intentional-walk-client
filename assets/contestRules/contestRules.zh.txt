@@ -4,11 +4,11 @@
 
 參賽方式
 
-* 下載免費的Intentional Walk（有意圖的行走）應用程序。
-* 在應用程式商店中搜尋「Intentional Walk」。
+* 下載免費的Let's Walk（有意圖的行走）應用程序。
+* 在應用程式商店中搜尋「Let's Walk」。
 * 遵循註冊介面的指示，創建帳戶。
 * 開始行走！您可選擇性地記錄您的步數。這款應用程式將透過您手機上的保健應用程式（Apple Health或Google Fit）自動追蹤您的步數。
-* 如需更多資訊，請造訪： iwalk.c4sf.me
+* 如需更多資訊，請造訪： www.letswalk.app
 
 計劃日期
 
@@ -23,7 +23,7 @@
 
 雜項
 
-* Intentional Walk由San Francisco公共衛生局運營。由平等機會提供者USDA SNAP出資。社區合作夥伴包括加州公共衛生局，SF Civic Tech，San Francisco Giants以及San Francisco 休閒及公園管理局。
+* Let's Walk由San Francisco公共衛生局運營。由平等機會提供者USDA SNAP出資。社區合作夥伴包括加州公共衛生局，SF Civic Tech，San Francisco Giants以及San Francisco 休閒及公園管理局。
 * San Francisco公共衛生局保留更改比賽規則，計劃日期和獎項頒發日期的權利。
 * 您可從隱私政策中找到關於隱私的資訊。
 * Apple和Google並非此次競賽的贊助商，不對比賽規則及結果負責。

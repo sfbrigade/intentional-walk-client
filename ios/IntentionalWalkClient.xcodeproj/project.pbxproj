@@ -14,11 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		455033CA2B116DF800966531 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 455033B72B116DF800966531 /* MaterialIcons.ttf */; };
 		455033CD2B140BD100966531 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455033CC2B140BD100966531 /* CoreMotion.framework */; };
+		7BE3A5EE9E3C49F9A1BF85E9 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5479CAEFD3D44F6A35135DB /* BootSplash.storyboard */; };
 		8763620B1A13461DA39E2995 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319F3A3FCC274A99959B8285 /* BootSplash.storyboard */; };
 		BC23F36E8155F30C29916DA3 /* libPods-IntentionalWalkClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8A2E5EA064118A16EA92D /* libPods-IntentionalWalkClient.a */; };
 		E02DEF1B389FF6576CC513E9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 471BF60AF23453ED59C9D928 /* PrivacyInfo.xcprivacy */; };
 		E1AB791684A84AB0A93995B5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818F890A11F245FEBF1487D7 /* Colors.xcassets */; };
-		7BE3A5EE9E3C49F9A1BF85E9 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5479CAEFD3D44F6A35135DB /* BootSplash.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		713179817B9B485EFC21EC2D /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		818F890A11F245FEBF1487D7 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = IntentionalWalkClient/Colors.xcassets; sourceTree = "<group>"; };
 		8D34F1FDB1835D8BF7E42F4A /* Pods-IntentionalWalkClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient.release.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient/Pods-IntentionalWalkClient.release.xcconfig"; sourceTree = "<group>"; };
+		A5479CAEFD3D44F6A35135DB /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = IntentionalWalkClient/BootSplash.storyboard; sourceTree = "<group>"; };
 		E84F2CC89B53464D95BA3D01 /* Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; path = "Target Support Files/Pods-IntentionalWalkClient-IntentionalWalkClientTests/Pods-IntentionalWalkClient-IntentionalWalkClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		A5479CAEFD3D44F6A35135DB /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "IntentionalWalkClient/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,7 +529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.4;
+				MARKETING_VERSION = 4.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -557,7 +557,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0.4;
+				MARKETING_VERSION = 4.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
