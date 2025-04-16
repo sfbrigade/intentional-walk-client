@@ -1,6 +1,6 @@
-To the Intentional Walk App User,
+To the Let's Walk App User,
 
-Thank you for joining the San Francisco Department of Public Health (SFDPH) and California Department of Public Health (CDPH) Intentional Walk program (Program) and using the Intentional Walk Application (App). We would like to inform you that by participating in the Program, you allow SFDPH/CDPH and SF Civic Tech to access the following data: passive steps (unrecorded steps), active steps (recorded steps), total steps, and distance for recorded walks during the contest and the 30-day period prior to the contest start date, user first and last name, email address, age, zip code of residence, race, sexual orientation, and gender identity. Once the App is uninstalled, and/or the Program concludes, additional data will no longer be collected. To protect your personal information, SFDPH/CDPH adheres to the following rules and regulations:
+Thank you for joining the San Francisco Department of Public Health (SFDPH) and California Department of Public Health (CDPH) Let's Walk program (Program) and using the Let's Walk Application (App). We would like to inform you that by participating in the Program, you allow SFDPH/CDPH and SF Civic Tech to access the following data: passive steps (unrecorded steps), active steps (recorded steps), total steps, and distance for recorded walks during the contest and the 30-day period prior to the contest start date, user first and last name, email address, age, zip code of residence, race, sexual orientation, and gender identity. Once the App is uninstalled, and/or the Program concludes, additional data will no longer be collected. To protect your personal information, SFDPH/CDPH adheres to the following rules and regulations:
 
 1. Personally identifiable information may only be obtained through lawful means disclosed herein.
 
@@ -26,6 +26,6 @@ Thank you for joining the San Francisco Department of Public Health (SFDPH) and 
 
 12. Other parties will not collect personal information about the App user’s online activities and on different websites while using the App.
 
-13. If you have any questions or comments about this information, the Intentional Walk Program, or App, please contact SFDPH at: intentionalwalk@sfdph.org or CDPH Privacy Office at: Privacy@cdph.ca.gov.
+13. If you have any questions or comments about this information, the Let's Walk Program, or App, please contact SFDPH at: intentionalwalk@sfdph.org or CDPH Privacy Office at: Privacy@cdph.ca.gov.
 
 14. The App user has the right to have any electronically collected personal information deleted by the SFDPH/CDPH without reuse or distribution. Users of the App may request to have their electronically collected personal information deleted by contacting SFDPH at: intentionalwalk@sfdph.org.
