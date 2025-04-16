@@ -6,3 +6,5 @@ gem 'xcodeproj', '< 1.26.0'
 gem 'concurrent-ruby', '< 1.3.4'
 
 gem "fastlane", "~> 2.219"
+
+gem "pry", "~> 0.15.2"

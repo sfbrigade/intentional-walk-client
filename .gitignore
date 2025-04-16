@@ -83,3 +83,7 @@ yarn-error.log
 #Sentry
 android/sentry.properties
 ios/sentry.properties
+
+# AppStore Connect API Key files
+ApiKey.json
+*.p8

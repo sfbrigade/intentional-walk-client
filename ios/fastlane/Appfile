@@ -1,7 +1,7 @@
 app_identifier("org.codeforsanfrancisco.intentionalwalk") # The bundle identifier of your app
 apple_id(ENV['APPLE_ID']) # Your Apple email address
 
-itc_team_id("1498174509") # App Store Connect Team ID
+itc_team_id("127299321") # App Store Connect Team ID
 team_id("PXX6Y4HT3J") # Developer Portal Team ID
 
 # For more information about the Appfile, see:
