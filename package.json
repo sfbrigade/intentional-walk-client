@@ -32,6 +32,7 @@
     "react-native-get-random-values": "^1.11.0",
     "react-native-google-fit": "^0.20.0",
     "react-native-health": "^1.19.0",
+    "react-native-health-connect": "github:matinzd/react-native-health-connect#04f89291911d9ea3c203accec57a8561f97ad367",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-localization": "^2.3.2",
     "react-native-safe-area-context": "^5.1.0",
