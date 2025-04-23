@@ -2,7 +2,7 @@
 
 To the Let's Walk App User,
 
-By joining San Francisco Department of Public Health (SFDPH), California Department of Public Health (CDPH), Let's Walk program (Program) and using the Let's Walk Application (App) you will allow SFDPH/CDPH to access the following data: total steps and walking distance during the Program, user first and last name, email address, age, and zip code of residence. Once the App is uninstalled, and/or the Program concludes, additional data will no longer be collected. SFDPH/CDPH adheres to the following regarding personal information.
+By joining San Francisco Department of Public Health (SFDPH), California Department of Public Health (CDPH), Let's Walk Program (Program) and using the Let's Walk Application (App) you will allow SFDPH/CDPH to access the following data: total steps and walking distance during the Program, user first and last name, email address, age, and zip code of residence. Once the App is uninstalled, and/or the Program concludes, additional data will no longer be collected. SFDPH/CDPH adheres to the following regarding personal information.
 
 1.  Personally identifiable information may only be obtained through lawful means.
 2.  SFDPH/CDPH and SF Civic Tech does not make available, sell, or use personal data for any purpose or reason other than those specified, including third parties, except with the consent of the user, or as required by law or regulations.
