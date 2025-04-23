@@ -8,7 +8,7 @@ How to Enter
 * In your app store, search, “Let's Walk.” 
 * Follow the instructions in the sign-up screens to create a profile.
 * Start walking! It is optional to record your walks. The app will automatically track your steps via your phone’s health application (Apple Health or Google Fit).
-* For more information: www.letswalk.app
+* For more information: letswalk.app
 
 Program Dates
 

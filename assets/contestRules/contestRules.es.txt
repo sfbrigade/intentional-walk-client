@@ -8,7 +8,7 @@ Cómo participar
 * Busca Let's Walk en la tienda de aplicaciones.
 * Sigue las instrucciones que aparecen en la pantalla de registro para crear un perfil.
 * ¡Comienza a caminar! El registro de tus caminatas es opcional. La aplicación registrará automáticamente tus pasos mediante la aplicación de salud de tu teléfono (Apple Health o Google Fit).
-* Para obtener más información, visita: www.letswalk.app
+* Para obtener más información, visita: letswalk.app
 
 Fechas del programa
 
@@ -23,7 +23,7 @@ Premio(s)
 
 Varios
 
-* Let's Walk está dirigido por el Departamento de Salud Pública de San Francisco. Es financiado por SNAP del USDA, un proveedor que brinda igualdad de oportunidades. Entre los socios comunitarios, se encuentra el Departamento de Salud Pública de California, SF Civic Tech, los Gigantes de San Francisco, y el Departamento de Recreación y Parques de San Francisco.
+* Vamos a Caminar (Let’s Walk) está dirigido por el Departamento de Salud Pública de San Francisco. Es financiado por SNAP del USDA, un proveedor que brinda igualdad de oportunidades. Entre los socios comunitarios, se encuentra el Departamento de Salud Pública de California, SF Civic Tech, los Gigantes de San Francisco, y el Departamento de Recreación y Parques de San Francisco.
 * El Departamento de Salud Pública de San Francisco se reserva el derecho a modificar las reglas, el programa y las fechas de premiación.
 * Puedes encontrar la información de privacidad en la Política de privacidad.
 * Apple y Google no patrocinan este concurso y no son responsables de las reglas ni de los resultados.
