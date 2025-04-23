@@ -122,7 +122,7 @@ export default function HamburgerMenu(props) {
           {Strings.common.whereToWalk}
         </HamburgerMenuItem>
         <HamburgerMenuItem
-          onPress={() => Linking.openURL('mailto:intentionalwalk@sfdph.org')}
+          onPress={() => Linking.openURL('mailto:letswalk@sfdph.org')}
           icon="email">
           {Strings.common.emailUs}
         </HamburgerMenuItem>

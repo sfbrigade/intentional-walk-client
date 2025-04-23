@@ -26,6 +26,6 @@
 
 12. 其他方不會收集應用程式使用者在使用應用程式期間的線上活動以及在不同網站上的個人資訊。
 
-13. 如果您對此資訊、Let's Walk計劃或應用程式有任何疑問或意見，請聯絡SFDPH：intentionalwalk@sfdph.org或CDPH隱私辦公室：Privacy@cdph.ca.gov。
+13. 如果您對此資訊、Let's Walk計劃或應用程式有任何疑問或意見，請聯絡SFDPH：letswalk@sfdph.org或CDPH隱私辦公室：Privacy@cdph.ca.gov。
 
-14. 應用程式使用者有權要求SFDPH/CDPH刪除任何以電子形式收集的個人資訊，同時不得重複使用或散佈資訊。應用程式使用者如欲刪除以電子形式收集的個人資訊，可聯絡SFDPH：intentionalwalk@sfdph.org。
+14. 應用程式使用者有權要求SFDPH/CDPH刪除任何以電子形式收集的個人資訊，同時不得重複使用或散佈資訊。應用程式使用者如欲刪除以電子形式收集的個人資訊，可聯絡SFDPH：letswalk@sfdph.org。
