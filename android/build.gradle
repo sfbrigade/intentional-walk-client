@@ -5,7 +5,7 @@ buildscript {
         buildToolsVersion = "35.0.0"
         minSdkVersion = 26
         compileSdkVersion = 35
-        targetSdkVersion = 34
+        targetSdkVersion = 35
         authVersion = '18.0.0'
         fitnessVersion = '20.0.0'
         googlePlayServicesVersion = '17.0.0'
