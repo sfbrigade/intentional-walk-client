@@ -1,6 +1,6 @@
-致Let's Walk應用程式使用者：
+致Let’s Walk應用程式使用者：
 
-感謝您參加三藩市公共衛生局 (San Francisco Department of Public Health, SFDPH) 和加州公共衛生局 (California Department of Public Health, CDPH) 共同開展的 Let's Walk計劃（意為「有意圖的行走計劃」，下稱「計劃」）並使用 Let's Walk應用程式（下稱「應用程式」）。我們想告知您，參與計劃即表示您同意SFDPH/CDPH和SF Civic Tech獲取以下資料：比賽期間和比賽開始日期前30天內的被動步數（未記錄的步數）、主動步數（已記錄的步數）、總步數和已記錄的步行距離，以及使用者的姓名、電子郵箱、年齡、居住地郵遞區號、種族、性取向和性別認同。當您解除安裝應用程式和/或計劃結束後，我們將不再收集其他數據。為保護您的個人資訊，SFDPH/CDPH遵守以下規則和條例：
+感謝您參加三藩市公共衛生局 (San Francisco Department of Public Health, SFDPH) 和加州公共衛生局 (California Department of Public Health, CDPH) 共同開展的 Let’s Walk計劃（意為「有意圖的行走計劃」，下稱「計劃」）並使用 Let’s Walk應用程式（下稱「應用程式」）。我們想告知您，參與計劃即表示您同意SFDPH/CDPH和SF Civic Tech獲取以下資料：比賽期間和比賽開始日期前30天內的被動步數（未記錄的步數）、主動步數（已記錄的步數）、總步數和已記錄的步行距離，以及使用者的姓名、電子郵箱、年齡、居住地郵遞區號、種族、性取向和性別認同。當您解除安裝應用程式和/或計劃結束後，我們將不再收集其他數據。為保護您的個人資訊，SFDPH/CDPH遵守以下規則和條例：
 
 1. 僅可透過本文中披露的合法手段取得個人識別資訊。
 
@@ -26,6 +26,6 @@
 
 12. 其他方不會收集應用程式使用者在使用應用程式期間的線上活動以及在不同網站上的個人資訊。
 
-13. 如果您對此資訊、Let's Walk計劃或應用程式有任何疑問或意見，請聯絡SFDPH：intentionalwalk@sfdph.org或CDPH隱私辦公室：Privacy@cdph.ca.gov。
+13. 如果您對此資訊、Let’s Walk計劃或應用程式有任何疑問或意見，請聯絡SFDPH：letswalk@sfdph.org或CDPH隱私辦公室：Privacy@cdph.ca.gov。
 
-14. 應用程式使用者有權要求SFDPH/CDPH刪除任何以電子形式收集的個人資訊，同時不得重複使用或散佈資訊。應用程式使用者如欲刪除以電子形式收集的個人資訊，可聯絡SFDPH：intentionalwalk@sfdph.org。
+14. 應用程式使用者有權要求SFDPH/CDPH刪除任何以電子形式收集的個人資訊，同時不得重複使用或散佈資訊。應用程式使用者如欲刪除以電子形式收集的個人資訊，可聯絡SFDPH：letswalk@sfdph.org。
